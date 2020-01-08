@@ -9,12 +9,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web.Service", "Web.Service\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template", "Template\Template.csproj", "{D9F21F77-F84E-4B48-B5C7-AFF8E1CCA126}"
 EndProject
+<<<<<<< HEAD
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Migrations", "Migration\Migrations.csproj", "{C04718AE-19F2-49AF-8086-BFDE93A21C18}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{80916665-24C5-46F7-ABD4-D5CB955A5C8C}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations", "Migration\Migrations.csproj", "{C04718AE-19F2-49AF-8086-BFDE93A21C18}"
+>>>>>>> a8e3a18aebb561b052b30ebdc42c8e460964fb3b
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

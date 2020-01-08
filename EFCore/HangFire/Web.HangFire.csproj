@@ -24,6 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <ProjectReference Include="..\Web.Service\Web.Service.csproj" />
   </ItemGroup>
 
@@ -34,6 +35,14 @@
 
   <ItemGroup>
     <None Include="..\.editorconfig" Link=".editorconfig" />
+=======
+    <Folder Include="Areas\Areas\Data\" />
+    <Folder Include="Areas\Areas\Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Web.Service\Web.Service.csproj" />
+>>>>>>> a8e3a18aebb561b052b30ebdc42c8e460964fb3b
   </ItemGroup>
 
 

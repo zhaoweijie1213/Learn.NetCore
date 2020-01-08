@@ -26,7 +26,10 @@ namespace HangFire
         /// <param name="services"></param>
         public void ConfigureServices(IServiceCollection services)
         {
+<<<<<<< HEAD
             //services.MvcOptions.EnableEndpointRouting = false;
+=======
+>>>>>>> a8e3a18aebb561b052b30ebdc42c8e460964fb3b
             services.AddDbContext<BloggingContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("BloggingDatabase")));
             //services.AddRazorPages();
@@ -75,9 +78,13 @@ namespace HangFire
 
             app.UseEndpoints(endpoints =>
             {
+<<<<<<< HEAD
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{Areas=View}/{controller=Home}/{action=Index}/{id?}");
+=======
+                endpoints.MapRazorPages();
+>>>>>>> a8e3a18aebb561b052b30ebdc42c8e460964fb3b
             });
 
             app.UseStaticFiles();
@@ -86,7 +93,16 @@ namespace HangFire
             backgroundJobs.Enqueue(() => Console.WriteLine("Hello world from Hangfire!"));
 
 
+<<<<<<< HEAD
 
+=======
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute(
+            //        name: "default",
+            //        template: "{controller=Home}/{action=Index}/{id?}");
+            //});
+>>>>>>> a8e3a18aebb561b052b30ebdc42c8e460964fb3b
         }
     }
 }

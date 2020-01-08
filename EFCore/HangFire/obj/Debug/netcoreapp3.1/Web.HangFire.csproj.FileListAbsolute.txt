@@ -149,6 +149,7 @@ D:\A_zwj\HangFire\HangFire\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
 D:\A_zwj\HangFire\HangFire\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
 D:\A_zwj\HangFire\HangFire\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 D:\A_zwj\HangFire\HangFire\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+<<<<<<< HEAD
 D:\A_zwj\Learn.NetCore\EFCore\HangFire\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\A_zwj\Learn.NetCore\EFCore\HangFire\bin\Debug\netcoreapp3.1\appsettings.json
 D:\A_zwj\Learn.NetCore\EFCore\HangFire\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -294,3 +295,5 @@ D:\A_zwj\Learn.NetCore\EFCore\HangFire\obj\Debug\netcoreapp3.1\Razor\Areas\View\
 D:\A_zwj\Learn.NetCore\EFCore\HangFire\obj\Debug\netcoreapp3.1\Web.HangFire.RazorTargetAssemblyInfo.cs
 D:\A_zwj\Learn.NetCore\EFCore\HangFire\obj\Debug\netcoreapp3.1\Web.HangFire.Views.pdb
 D:\A_zwj\Learn.NetCore\EFCore\HangFire\obj\Debug\netcoreapp3.1\Razor\Areas\View\Views\_Layout.cshtml.g.cs
+=======
+>>>>>>> a8e3a18aebb561b052b30ebdc42c8e460964fb3b

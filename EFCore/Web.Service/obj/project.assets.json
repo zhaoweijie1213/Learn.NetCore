@@ -5448,11 +5448,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\A_zwj\\Learn.NetCore\\EFCore\\Web.Service\\Web.Service.csproj",
       "projectName": "Web.Service",
       "projectPath": "D:\\A_zwj\\Learn.NetCore\\EFCore\\Web.Service\\Web.Service.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "D:\\A_zwj\\Learn.NetCore\\EFCore\\Web.Service\\obj\\",
+=======
+      "projectUniqueName": "D:\\A_zwj\\HangFire\\Web.Service\\Web.Service.csproj",
+      "projectName": "Web.Service",
+      "projectPath": "D:\\A_zwj\\HangFire\\Web.Service\\Web.Service.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\A_zwj\\HangFire\\Web.Service\\obj\\",
+>>>>>>> a8e3a18aebb561b052b30ebdc42c8e460964fb3b
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -5473,8 +5481,13 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+<<<<<<< HEAD
             "D:\\A_zwj\\Learn.NetCore\\EFCore\\Migration\\Migrations.csproj": {
               "projectPath": "D:\\A_zwj\\Learn.NetCore\\EFCore\\Migration\\Migrations.csproj"
+=======
+            "D:\\A_zwj\\HangFire\\Migration\\Migrations.csproj": {
+              "projectPath": "D:\\A_zwj\\HangFire\\Migration\\Migrations.csproj"
+>>>>>>> a8e3a18aebb561b052b30ebdc42c8e460964fb3b
             }
           }
         }

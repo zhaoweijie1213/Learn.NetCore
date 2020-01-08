@@ -5165,11 +5165,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\A_zwj\\Learn.NetCore\\EFCore\\Migration\\Migrations.csproj",
       "projectName": "Migrations",
       "projectPath": "D:\\A_zwj\\Learn.NetCore\\EFCore\\Migration\\Migrations.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "D:\\A_zwj\\Learn.NetCore\\EFCore\\Migration\\obj\\",
+=======
+      "projectUniqueName": "D:\\A_zwj\\HangFire\\Migration\\Migrations.csproj",
+      "projectName": "Migrations",
+      "projectPath": "D:\\A_zwj\\HangFire\\Migration\\Migrations.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\A_zwj\\HangFire\\Migration\\obj\\",
+>>>>>>> a8e3a18aebb561b052b30ebdc42c8e460964fb3b
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

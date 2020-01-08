@@ -9,6 +9,7 @@ D:\A_zwj\HangFire\Web.Service\obj\Debug\netcoreapp3.1\Web.Service.pdb
 D:\A_zwj\HangFire\Web.Service\obj\Debug\netcoreapp3.1\Web.Service.csproj.CopyComplete
 D:\A_zwj\HangFire\Web.Service\bin\Debug\netcoreapp3.1\Migrations.dll
 D:\A_zwj\HangFire\Web.Service\bin\Debug\netcoreapp3.1\Migrations.pdb
+<<<<<<< HEAD
 D:\A_zwj\Learn.NetCore\EFCore\Web.Service\bin\Debug\netcoreapp3.1\Web.Service.deps.json
 D:\A_zwj\Learn.NetCore\EFCore\Web.Service\bin\Debug\netcoreapp3.1\Web.Service.dll
 D:\A_zwj\Learn.NetCore\EFCore\Web.Service\bin\Debug\netcoreapp3.1\Web.Service.pdb
@@ -20,3 +21,5 @@ D:\A_zwj\Learn.NetCore\EFCore\Web.Service\obj\Debug\netcoreapp3.1\Web.Service.As
 D:\A_zwj\Learn.NetCore\EFCore\Web.Service\obj\Debug\netcoreapp3.1\Web.Service.csproj.CopyComplete
 D:\A_zwj\Learn.NetCore\EFCore\Web.Service\obj\Debug\netcoreapp3.1\Web.Service.dll
 D:\A_zwj\Learn.NetCore\EFCore\Web.Service\obj\Debug\netcoreapp3.1\Web.Service.pdb
+=======
+>>>>>>> a8e3a18aebb561b052b30ebdc42c8e460964fb3b

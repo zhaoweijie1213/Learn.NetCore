@@ -53,6 +53,7 @@ D:\A_zwj\HangFire\Template\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
 D:\A_zwj\HangFire\Template\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
 D:\A_zwj\HangFire\Template\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 D:\A_zwj\HangFire\Template\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+<<<<<<< HEAD
 D:\A_zwj\Learn.NetCore\EFCore\Template\bin\Debug\netcoreapp3.1\Template.exe
 D:\A_zwj\Learn.NetCore\EFCore\Template\bin\Debug\netcoreapp3.1\Template.deps.json
 D:\A_zwj\Learn.NetCore\EFCore\Template\bin\Debug\netcoreapp3.1\Template.runtimeconfig.json
@@ -108,3 +109,5 @@ D:\A_zwj\Learn.NetCore\EFCore\Template\obj\Debug\netcoreapp3.1\Template.Assembly
 D:\A_zwj\Learn.NetCore\EFCore\Template\obj\Debug\netcoreapp3.1\Template.csproj.CopyComplete
 D:\A_zwj\Learn.NetCore\EFCore\Template\obj\Debug\netcoreapp3.1\Template.dll
 D:\A_zwj\Learn.NetCore\EFCore\Template\obj\Debug\netcoreapp3.1\Template.pdb
+=======
+>>>>>>> a8e3a18aebb561b052b30ebdc42c8e460964fb3b

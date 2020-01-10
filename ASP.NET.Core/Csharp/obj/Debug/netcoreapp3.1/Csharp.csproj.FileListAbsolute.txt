@@ -41,3 +41,4 @@ D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\bin\Debug\netcoreapp3.1\Csharp.dll
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\bin\Debug\netcoreapp3.1\Csharp.pdb
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\obj\Debug\netcoreapp3.1\Csharp.dll
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\obj\Debug\netcoreapp3.1\Csharp.pdb
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\obj\Debug\netcoreapp3.1\Csharp.csprojAssemblyReference.cache

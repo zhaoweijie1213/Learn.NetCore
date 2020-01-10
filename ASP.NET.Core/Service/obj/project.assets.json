@@ -2,6 +2,40 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "aliyun-net-sdk-alimt/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "aliyun-net-sdk-core": "1.1.12"
+        },
+        "compile": {
+          "lib/netstandard2.0/aliyun-net-sdk-alimt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/aliyun-net-sdk-alimt.dll": {}
+        }
+      },
+      "aliyun-net-sdk-core/1.5.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/aliyun-net-sdk-core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/aliyun-net-sdk-core.dll": {}
+        }
+      },
+      "aliyun-net-sdk-ros/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "(, 12.0.2]",
+          "aliyun-net-sdk-core": "1.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/aliyun-net-sdk-ros.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/aliyun-net-sdk-ros.dll": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
         "type": "package",
         "compile": {
@@ -337,6 +371,15 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "Newtonsoft.Json/3.5.8": {
+        "type": "package",
+        "compile": {
+          "lib/35/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/35/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.native.System/4.3.0": {
@@ -1284,6 +1327,44 @@
     }
   },
   "libraries": {
+    "aliyun-net-sdk-alimt/1.0.3": {
+      "sha512": "M886zJ7NvdgaVhCNYU80GsYSTdb02D7Hewlo+N8t6oxSUElPtAf1SAE077kUIqkACiLAAEhgF3OsgSk/DmcWIw==",
+      "type": "package",
+      "path": "aliyun-net-sdk-alimt/1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aliyun-net-sdk-alimt.1.0.3.nupkg.sha512",
+        "aliyun-net-sdk-alimt.nuspec",
+        "lib/netstandard2.0/aliyun-net-sdk-alimt.dll"
+      ]
+    },
+    "aliyun-net-sdk-core/1.5.3": {
+      "sha512": "uOw4ML/KmDDQGJXcG/qnfHHV3+RZe5BeQpYZwgtw/0klFmUAsvayo+dAMOiW8eFQKFWXSFn6JttuHOYvoBhSBQ==",
+      "type": "package",
+      "path": "aliyun-net-sdk-core/1.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aliyun-net-sdk-core.1.5.3.nupkg.sha512",
+        "aliyun-net-sdk-core.nuspec",
+        "lib/net45/aliyun-net-sdk-core.dll",
+        "lib/netstandard2.0/aliyun-net-sdk-core.dll"
+      ]
+    },
+    "aliyun-net-sdk-ros/3.1.0": {
+      "sha512": "qq4NvY2LhhAh+gYxjJELn7qEPQUR4AJO+Rh3Au7PmbqJkuC1T9lQJB9H78Ab27MB1+3h4BbXmluijAZ65Y70rQ==",
+      "type": "package",
+      "path": "aliyun-net-sdk-ros/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aliyun-net-sdk-ros.3.1.0.nupkg.sha512",
+        "aliyun-net-sdk-ros.nuspec",
+        "lib/net45/aliyun-net-sdk-ros.dll",
+        "lib/netstandard2.0/aliyun-net-sdk-ros.dll"
+      ]
+    },
     "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
       "sha512": "1Am6l4Vpn3/K32daEqZI+FFr96OlZkgwK2LcT3pZ2zWubR5zTPW3/FkO1Rat9kb7oQOa4rxgl9LJHc5tspCWfg==",
       "type": "package",
@@ -1843,6 +1924,26 @@
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Newtonsoft.Json/3.5.8": {
+      "sha512": "Xmri4q9s1NjuiBtOFkWMU9sUZdw5V7kFSf3CQQ3TlDyzWQHo94d5cHNxsSlnezGAZSPfdEG5k7bOrkzTe6rUOQ==",
+      "type": "package",
+      "path": "newtonsoft.json/3.5.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/20/Newtonsoft.Json.Net20.dll",
+        "lib/20/Newtonsoft.Json.Net20.pdb",
+        "lib/20/Newtonsoft.Json.Net20.xml",
+        "lib/35/Newtonsoft.Json.dll",
+        "lib/35/Newtonsoft.Json.pdb",
+        "lib/35/Newtonsoft.Json.xml",
+        "lib/SL/Newtonsoft.Json.Silverlight.dll",
+        "lib/SL/Newtonsoft.Json.Silverlight.pdb",
+        "lib/SL/Newtonsoft.Json.Silverlight.xml",
+        "newtonsoft.json.3.5.8.nupkg.sha512",
+        "newtonsoft.json.nuspec"
       ]
     },
     "runtime.native.System/4.3.0": {
@@ -4979,7 +5080,9 @@
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.EntityFrameworkCore.Design >= 3.1.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.0",
-      "Microsoft.EntityFrameworkCore.Tools >= 3.1.0"
+      "Microsoft.EntityFrameworkCore.Tools >= 3.1.0",
+      "aliyun-net-sdk-alimt >= 1.0.3",
+      "aliyun-net-sdk-ros >= 3.1.0"
     ]
   },
   "packageFolders": {
@@ -5041,6 +5144,14 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[3.1.0, )"
+          },
+          "aliyun-net-sdk-alimt": {
+            "target": "Package",
+            "version": "[1.0.3, )"
+          },
+          "aliyun-net-sdk-ros": {
+            "target": "Package",
+            "version": "[3.1.0, )"
           }
         },
         "imports": [
@@ -5061,5 +5172,27 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1602",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "aliyun-net-sdk-ros 3.1.0 未提供依赖项 Newtonsoft.Json (<= 12.0.2) 的包含下限。已解决 Newtonsoft.Json 3.5.8 的近似最佳匹配。",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8”而不是项目目标框架“.NETCoreApp,Version=v3.1”还原包“Newtonsoft.Json 3.5.8”。此包可能与项目不完全兼容。",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

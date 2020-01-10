@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET.Core", "ASP.NET.Core.csproj", "{9DC60509-4FD4-4DFD-92F2-44CC39AFD299}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP.NET.Core", "ASP.NET.Core.csproj", "{9DC60509-4FD4-4DFD-92F2-44CC39AFD299}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csharp", "..\Csharp\Csharp.csproj", "{51BB4B5B-3A72-408A-A138-F3CF1A4DF705}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Csharp", "..\Csharp\Csharp.csproj", "{51BB4B5B-3A72-408A-A138-F3CF1A4DF705}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "..\Service\Service.csproj", "{8613D2B1-6CFA-4DA1-A1CF-B6A6C4365404}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "..\Service\Service.csproj", "{8613D2B1-6CFA-4DA1-A1CF-B6A6C4365404}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityDbContnext", "..\EntityDbContnext\EntityDbContnext.csproj", "{2D394469-BF8A-4D11-967C-A9E4D86DE90E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityDbContnext", "..\EntityDbContnext\EntityDbContnext.csproj", "{2D394469-BF8A-4D11-967C-A9E4D86DE90E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpOperation", "..\HttpOperation\HttpOperation.csproj", "{DDF32298-DB9C-4BD8-AC45-8F4A907D727C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{2D394469-BF8A-4D11-967C-A9E4D86DE90E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D394469-BF8A-4D11-967C-A9E4D86DE90E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D394469-BF8A-4D11-967C-A9E4D86DE90E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDF32298-DB9C-4BD8-AC45-8F4A907D727C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDF32298-DB9C-4BD8-AC45-8F4A907D727C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDF32298-DB9C-4BD8-AC45-8F4A907D727C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDF32298-DB9C-4BD8-AC45-8F4A907D727C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

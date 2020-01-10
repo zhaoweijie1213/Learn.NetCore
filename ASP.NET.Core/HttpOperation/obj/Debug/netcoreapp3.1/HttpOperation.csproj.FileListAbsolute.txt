@@ -1,0 +1,5 @@
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\HttpOperation\bin\Debug\netcoreapp3.1\HttpOperation.deps.json
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\HttpOperation\bin\Debug\netcoreapp3.1\HttpOperation.dll
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\HttpOperation\obj\Debug\netcoreapp3.1\HttpOperation.csprojAssemblyReference.cache
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\HttpOperation\obj\Debug\netcoreapp3.1\HttpOperation.AssemblyInfoInputs.cache
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\HttpOperation\obj\Debug\netcoreapp3.1\HttpOperation.AssemblyInfo.cs

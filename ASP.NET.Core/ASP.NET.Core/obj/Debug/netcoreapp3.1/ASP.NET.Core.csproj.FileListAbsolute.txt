@@ -51,7 +51,6 @@ D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\bin\Debug\netcoreapp3.1\ASP.NET
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\bin\Debug\netcoreapp3.1\ASP.NET.Core.Views.dll
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\bin\Debug\netcoreapp3.1\ASP.NET.Core.Views.pdb
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\bin\Debug\netcoreapp3.1\EntityDbContnext.pdb
-D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\obj\Debug\netcoreapp3.1\ASP.NET.Core.MvcApplicationPartsAssemblyInfo.cache
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\obj\Debug\netcoreapp3.1\ASP.NET.Core.Views.pdb
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\obj\Debug\netcoreapp3.1\ASP.NET.Core.dll
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\obj\Debug\netcoreapp3.1\ASP.NET.Core.pdb

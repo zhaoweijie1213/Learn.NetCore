@@ -1,0 +1,10 @@
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\EntityDbContnext\bin\Debug\netcoreapp3.1\EntityDbContnext.deps.json
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\EntityDbContnext\bin\Debug\netcoreapp3.1\EntityDbContnext.dll
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\EntityDbContnext\obj\Debug\netcoreapp3.1\EntityDbContnext.AssemblyInfoInputs.cache
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\EntityDbContnext\obj\Debug\netcoreapp3.1\EntityDbContnext.AssemblyInfo.cs
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\EntityDbContnext\bin\Debug\netcoreapp3.1\EntityDbContnext.runtimeconfig.json
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\EntityDbContnext\bin\Debug\netcoreapp3.1\EntityDbContnext.runtimeconfig.dev.json
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\EntityDbContnext\bin\Debug\netcoreapp3.1\EntityDbContnext.pdb
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\EntityDbContnext\obj\Debug\netcoreapp3.1\EntityDbContnext.dll
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\EntityDbContnext\obj\Debug\netcoreapp3.1\EntityDbContnext.pdb
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\EntityDbContnext\obj\Debug\netcoreapp3.1\EntityDbContnext.csprojAssemblyReference.cache

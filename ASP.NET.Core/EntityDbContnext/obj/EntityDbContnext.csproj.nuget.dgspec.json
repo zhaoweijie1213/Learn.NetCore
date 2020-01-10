@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\EntityDbContnext\\EntityDbContnext.csproj": {}
+    "D:\\Git\\Learn.NetCore\\ASP.NET.Core\\EntityDbContnext\\EntityDbContnext.csproj": {}
   },
   "projects": {
-    "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\EntityDbContnext\\EntityDbContnext.csproj": {
+    "D:\\Git\\Learn.NetCore\\ASP.NET.Core\\EntityDbContnext\\EntityDbContnext.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\EntityDbContnext\\EntityDbContnext.csproj",
+        "projectUniqueName": "D:\\Git\\Learn.NetCore\\ASP.NET.Core\\EntityDbContnext\\EntityDbContnext.csproj",
         "projectName": "EntityDbContnext",
-        "projectPath": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\EntityDbContnext\\EntityDbContnext.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\EntityDbContnext\\obj\\",
+        "projectPath": "D:\\Git\\Learn.NetCore\\ASP.NET.Core\\EntityDbContnext\\EntityDbContnext.csproj",
+        "packagesPath": "C:\\Users\\静儿\\.nuget\\packages\\",
+        "outputPath": "D:\\Git\\Learn.NetCore\\ASP.NET.Core\\EntityDbContnext\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\静儿\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

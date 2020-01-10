@@ -2209,11 +2209,12 @@
       ]
     },
     "System.Collections.Specialized/4.3.0": {
-      "sha512": "NoPBj0ykejqAWW4p4gGtrrL+3c84ZLSvGnHgq422ew1Rj4WKj1FA8/BCybqC111EtgcqUl6ZJNFYYS22HLgbjA==",
+      "sha512": "Epx8PoVZR0iuOnJJDzp7pWvdfMMOAvpUo95pC4ScH2mJuXkKA2Y4aR3cG9qt2klHgSons1WFh4kcGW7cSXvrxg==",
       "type": "package",
       "path": "system.collections.specialized/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2394,11 +2395,12 @@
       ]
     },
     "System.ComponentModel.Primitives/4.3.0": {
-      "sha512": "KMVuoQ+8bMQ/Z59M3s64num5AD74X5YSqVc7ibwGkPTfmmkl2W8VuSxLRJtpw4KzQrSKUgR0BLbF0adPfcTSGQ==",
+      "sha512": "j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
       "type": "package",
       "path": "system.componentmodel.primitives/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5081,25 +5083,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\静儿\\.nuget\\packages\\": {},
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\ASP.NET.Core\\ASP.NET.Core.csproj",
+      "projectUniqueName": "D:\\Git\\Learn.NetCore\\ASP.NET.Core\\ASP.NET.Core\\ASP.NET.Core.csproj",
       "projectName": "ASP.NET.Core",
-      "projectPath": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\ASP.NET.Core\\ASP.NET.Core.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\ASP.NET.Core\\obj\\",
+      "projectPath": "D:\\Git\\Learn.NetCore\\ASP.NET.Core\\ASP.NET.Core\\ASP.NET.Core.csproj",
+      "packagesPath": "C:\\Users\\静儿\\.nuget\\packages\\",
+      "outputPath": "D:\\Git\\Learn.NetCore\\ASP.NET.Core\\ASP.NET.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "D:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\静儿\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -5113,8 +5113,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\EntityDbContnext\\EntityDbContnext.csproj": {
-              "projectPath": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\EntityDbContnext\\EntityDbContnext.csproj"
+            "D:\\Git\\Learn.NetCore\\ASP.NET.Core\\EntityDbContnext\\EntityDbContnext.csproj": {
+              "projectPath": "D:\\Git\\Learn.NetCore\\ASP.NET.Core\\EntityDbContnext\\EntityDbContnext.csproj"
             }
           }
         }

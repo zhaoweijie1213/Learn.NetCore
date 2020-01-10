@@ -16,8 +16,8 @@ namespace Service
             // 构建一个 Client，用于发起请求
             IClientProfile profile = DefaultProfile.GetProfile(
                 "cn-hangzhou",
-                "<your-access-key-id>",
-                "<your-access-key-secret>");
+                "LTAI4FjFq4RozfDdzMQACVvY",
+                "WBIDojBKJA0SSqVB5sYjx8VHw9KtoJ");
             DefaultAcsClient client = new DefaultAcsClient(profile);
             try
             {

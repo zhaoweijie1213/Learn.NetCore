@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Aliyun.Acs.Core.Http;
+using System.ComponentModel;
 
 namespace Service
 {
@@ -48,9 +49,14 @@ namespace Service
         zh=1,
         //zh-tw 繁体中文
         zh_tw=2,
+        [Description("西班牙语")]
         //es 西班牙语
-        //ru 俄语
+        es =3,
+        [Description("俄语")]
+        ru=4,
         //fr 法语
+        [Description("法语")]
+        fr =5,
         //pt 葡萄牙语
         //de 德语
         //pt 葡萄牙语

@@ -42,3 +42,9 @@ D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\bin\Debug\netcoreapp3.1\Csharp.pdb
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\obj\Debug\netcoreapp3.1\Csharp.dll
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\obj\Debug\netcoreapp3.1\Csharp.pdb
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\obj\Debug\netcoreapp3.1\Csharp.csprojAssemblyReference.cache
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\bin\Debug\netcoreapp3.1\aliyun-net-sdk-alimt.dll
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\bin\Debug\netcoreapp3.1\aliyun-net-sdk-core.dll
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\bin\Debug\netcoreapp3.1\aliyun-net-sdk-ros.dll
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\bin\Debug\netcoreapp3.1\Service.dll
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\bin\Debug\netcoreapp3.1\Service.pdb

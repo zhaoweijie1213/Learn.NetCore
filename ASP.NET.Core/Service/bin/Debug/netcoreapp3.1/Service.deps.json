@@ -11,10 +11,22 @@
           "Microsoft.EntityFrameworkCore.Design": "3.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.0",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.0",
+          "aliyun-net-sdk-alimt": "1.0.3",
           "aliyun-net-sdk-ros": "3.1.0"
         },
         "runtime": {
           "Service.dll": {}
+        }
+      },
+      "aliyun-net-sdk-alimt/1.0.3": {
+        "dependencies": {
+          "aliyun-net-sdk-core": "1.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/aliyun-net-sdk-alimt.dll": {
+            "assemblyVersion": "1.0.3.0",
+            "fileVersion": "1.0.3.0"
+          }
         }
       },
       "aliyun-net-sdk-core/1.5.3": {
@@ -889,6 +901,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "aliyun-net-sdk-alimt/1.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-M886zJ7NvdgaVhCNYU80GsYSTdb02D7Hewlo+N8t6oxSUElPtAf1SAE077kUIqkACiLAAEhgF3OsgSk/DmcWIw==",
+      "path": "aliyun-net-sdk-alimt/1.0.3",
+      "hashPath": "aliyun-net-sdk-alimt.1.0.3.nupkg.sha512"
     },
     "aliyun-net-sdk-core/1.5.3": {
       "type": "package",

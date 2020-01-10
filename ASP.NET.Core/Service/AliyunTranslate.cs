@@ -11,8 +11,9 @@ namespace Service
 {
     public class AliyunTranslate
     {
-        public void HttpAliyunTranslate()
+        public string HttpAliyunTranslate(string Content)
         {
+            string res = "";
             // 构建一个 Client，用于发起请求
             IClientProfile profile = DefaultProfile.GetProfile(
                 "cn-hangzhou",
@@ -26,20 +27,41 @@ namespace Service
                 request.Method = MethodType.POST; //设置请求
                 request.FormatType = "text"; //翻译文本的格式  
                 request.SourceLanguage = "zh"; //源语言  
-                request.SourceText = "你好"; //原文  
+                request.SourceText = Content; //原文  
                 request.TargetLanguage = "en"; //目标语言  
                                                // 发起请求，并得到 Response
                 TranslateGeneralResponse response = client.GetAcsResponse(request);
-                System.Console.WriteLine(response.Data);
+                res = response.Data.Translated.ToString(); 
             }
             catch (ServerException ex)
             {
                 System.Console.WriteLine(ex.ToString());
             }
-            catch (ClientException ex)
-            {
-                System.Console.WriteLine(ex.ToString());
-            }
+            return res;
         }
+    }
+    enum Language : byte
+    {
+        //en 英语
+        en=0,
+        //zh 简体中文
+        zh=1,
+        //zh-tw 繁体中文
+        zh_tw=2,
+        //es 西班牙语
+        //ru 俄语
+        //fr 法语
+        //pt 葡萄牙语
+        //de 德语
+        //pt 葡萄牙语
+        //pl 波兰语
+        //ar 阿拉伯语
+        //tr 土耳其语
+        //th 泰语
+        //vi 越南语
+        //id 印尼语
+        //ms 马来
+        //ja 日语
+        //ko 韩语
     }
 }

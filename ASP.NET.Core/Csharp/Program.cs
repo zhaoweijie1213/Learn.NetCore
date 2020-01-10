@@ -1,4 +1,5 @@
 ﻿using System;
+using Service;
 
 namespace Csharp
 {
@@ -6,7 +7,11 @@ namespace Csharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            AliyunTranslate aliyunTranslate = new AliyunTranslate();
+            var s= Console.ReadLine();
+            var res=aliyunTranslate.HttpAliyunTranslate(s);
+            Console.WriteLine(res);
+            Console.ReadKey();
         }
     }
 }

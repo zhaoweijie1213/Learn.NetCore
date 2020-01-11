@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "..\Service\Servi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityDbContnext", "..\EntityDbContnext\EntityDbContnext.csproj", "{2D394469-BF8A-4D11-967C-A9E4D86DE90E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpOperation", "..\HttpOperation\HttpOperation.csproj", "{DDF32298-DB9C-4BD8-AC45-8F4A907D727C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpOperation", "..\HttpOperation\HttpOperation.csproj", "{DDF32298-DB9C-4BD8-AC45-8F4A907D727C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicMethod", "..\PublicMethod\PublicMethod.csproj", "{46DB2AD4-F759-47A5-9BCA-2FB814F6005F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{DDF32298-DB9C-4BD8-AC45-8F4A907D727C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDF32298-DB9C-4BD8-AC45-8F4A907D727C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDF32298-DB9C-4BD8-AC45-8F4A907D727C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46DB2AD4-F759-47A5-9BCA-2FB814F6005F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46DB2AD4-F759-47A5-9BCA-2FB814F6005F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46DB2AD4-F759-47A5-9BCA-2FB814F6005F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46DB2AD4-F759-47A5-9BCA-2FB814F6005F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

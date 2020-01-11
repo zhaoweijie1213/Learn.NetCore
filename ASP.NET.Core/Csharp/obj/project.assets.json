@@ -1324,11 +1324,36 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "HttpOperation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "aliyun-net-sdk-ros": "3.1.0"
+        },
+        "compile": {
+          "bin/placeholder/HttpOperation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HttpOperation.dll": {}
+        }
+      },
+      "PublicMethod/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/PublicMethod.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PublicMethod.dll": {}
+        }
+      },
       "Service/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "HttpOperation": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.0",
+          "PublicMethod": "1.0.0",
           "aliyun-net-sdk-alimt": "1.0.3",
           "aliyun-net-sdk-ros": "3.1.0"
         },
@@ -2234,12 +2259,11 @@
       ]
     },
     "System.Collections.Specialized/4.3.0": {
-      "sha512": "Epx8PoVZR0iuOnJJDzp7pWvdfMMOAvpUo95pC4ScH2mJuXkKA2Y4aR3cG9qt2klHgSons1WFh4kcGW7cSXvrxg==",
+      "sha512": "NoPBj0ykejqAWW4p4gGtrrL+3c84ZLSvGnHgq422ew1Rj4WKj1FA8/BCybqC111EtgcqUl6ZJNFYYS22HLgbjA==",
       "type": "package",
       "path": "system.collections.specialized/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2420,12 +2444,11 @@
       ]
     },
     "System.ComponentModel.Primitives/4.3.0": {
-      "sha512": "j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
+      "sha512": "KMVuoQ+8bMQ/Z59M3s64num5AD74X5YSqVc7ibwGkPTfmmkl2W8VuSxLRJtpw4KzQrSKUgR0BLbF0adPfcTSGQ==",
       "type": "package",
       "path": "system.componentmodel.primitives/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5092,6 +5115,16 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "HttpOperation/1.0.0": {
+      "type": "project",
+      "path": "../HttpOperation/HttpOperation.csproj",
+      "msbuildProject": "../HttpOperation/HttpOperation.csproj"
+    },
+    "PublicMethod/1.0.0": {
+      "type": "project",
+      "path": "../PublicMethod/PublicMethod.csproj",
+      "msbuildProject": "../PublicMethod/PublicMethod.csproj"
+    },
     "Service/1.0.0": {
       "type": "project",
       "path": "../Service/Service.csproj",
@@ -5108,23 +5141,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\静儿\\.nuget\\packages\\": {},
-    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git\\Learn.NetCore\\ASP.NET.Core\\Csharp\\Csharp.csproj",
+      "projectUniqueName": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\Csharp\\Csharp.csproj",
       "projectName": "Csharp",
-      "projectPath": "D:\\Git\\Learn.NetCore\\ASP.NET.Core\\Csharp\\Csharp.csproj",
-      "packagesPath": "C:\\Users\\静儿\\.nuget\\packages\\",
-      "outputPath": "D:\\Git\\Learn.NetCore\\ASP.NET.Core\\Csharp\\obj\\",
+      "projectPath": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\Csharp\\Csharp.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\Csharp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\静儿\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -5138,8 +5173,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Git\\Learn.NetCore\\ASP.NET.Core\\Service\\Service.csproj": {
-              "projectPath": "D:\\Git\\Learn.NetCore\\ASP.NET.Core\\Service\\Service.csproj"
+            "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\Service\\Service.csproj": {
+              "projectPath": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\Service\\Service.csproj"
             }
           }
         }

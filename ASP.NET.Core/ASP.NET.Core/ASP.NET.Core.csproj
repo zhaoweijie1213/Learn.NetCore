@@ -19,6 +19,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EntityDbContnext\EntityDbContnext.csproj" />
+    <ProjectReference Include="..\HttpOperation\HttpOperation.csproj" />
+    <ProjectReference Include="..\Service\Service.csproj" />
   </ItemGroup>
 
   <ItemGroup>

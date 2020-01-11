@@ -10,10 +10,31 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "3.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.0",
-          "Microsoft.EntityFrameworkCore.Tools": "3.1.0"
+          "Microsoft.EntityFrameworkCore.Tools": "3.1.0",
+          "aliyun-net-sdk-ros": "3.1.0"
         },
         "runtime": {
           "EntityDbContnext.dll": {}
+        }
+      },
+      "aliyun-net-sdk-core/1.5.3": {
+        "runtime": {
+          "lib/netstandard2.0/aliyun-net-sdk-core.dll": {
+            "assemblyVersion": "1.5.3.0",
+            "fileVersion": "1.5.3.0"
+          }
+        }
+      },
+      "aliyun-net-sdk-ros/3.1.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "3.5.8",
+          "aliyun-net-sdk-core": "1.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/aliyun-net-sdk-ros.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.1.0.0"
+          }
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
@@ -276,6 +297,14 @@
         "dependencies": {
           "System.Security.AccessControl": "4.5.0",
           "System.Security.Principal.Windows": "4.5.0"
+        }
+      },
+      "Newtonsoft.Json/3.5.8": {
+        "runtime": {
+          "lib/35/Newtonsoft.Json.dll": {
+            "assemblyVersion": "3.5.0.0",
+            "fileVersion": "3.5.0.0"
+          }
         }
       },
       "runtime.native.System/4.3.0": {
@@ -861,6 +890,20 @@
       "serviceable": false,
       "sha512": ""
     },
+    "aliyun-net-sdk-core/1.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uOw4ML/KmDDQGJXcG/qnfHHV3+RZe5BeQpYZwgtw/0klFmUAsvayo+dAMOiW8eFQKFWXSFn6JttuHOYvoBhSBQ==",
+      "path": "aliyun-net-sdk-core/1.5.3",
+      "hashPath": "aliyun-net-sdk-core.1.5.3.nupkg.sha512"
+    },
+    "aliyun-net-sdk-ros/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qq4NvY2LhhAh+gYxjJELn7qEPQUR4AJO+Rh3Au7PmbqJkuC1T9lQJB9H78Ab27MB1+3h4BbXmluijAZ65Y70rQ==",
+      "path": "aliyun-net-sdk-ros/3.1.0",
+      "hashPath": "aliyun-net-sdk-ros.3.1.0.nupkg.sha512"
+    },
     "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
       "type": "package",
       "serviceable": true,
@@ -1042,6 +1085,13 @@
       "sha512": "sha512-+FWlwd//+Tt56316p00hVePBCouXyEzT86Jb3+AuRotTND0IYn0OO3obs1gnQEs/txEnt+rF2JBGLItTG+Be6A==",
       "path": "microsoft.win32.registry/4.5.0",
       "hashPath": "microsoft.win32.registry.4.5.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/3.5.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Xmri4q9s1NjuiBtOFkWMU9sUZdw5V7kFSf3CQQ3TlDyzWQHo94d5cHNxsSlnezGAZSPfdEG5k7bOrkzTe6rUOQ==",
+      "path": "newtonsoft.json/3.5.8",
+      "hashPath": "newtonsoft.json.3.5.8.nupkg.sha512"
     },
     "runtime.native.System/4.3.0": {
       "type": "package",

@@ -54,3 +54,14 @@ D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\bin\Debug\netcoreapp3.1\EntityD
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\obj\Debug\netcoreapp3.1\ASP.NET.Core.Views.pdb
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\obj\Debug\netcoreapp3.1\ASP.NET.Core.dll
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\obj\Debug\netcoreapp3.1\ASP.NET.Core.pdb
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\bin\Debug\netcoreapp3.1\aliyun-net-sdk-core.dll
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\bin\Debug\netcoreapp3.1\aliyun-net-sdk-ros.dll
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\obj\Debug\netcoreapp3.1\ASP.NET.Core.MvcApplicationPartsAssemblyInfo.cache
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\bin\Debug\netcoreapp3.1\aliyun-net-sdk-alimt.dll
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\bin\Debug\netcoreapp3.1\HttpOperation.dll
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\bin\Debug\netcoreapp3.1\Service.dll
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\bin\Debug\netcoreapp3.1\HttpOperation.pdb
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\bin\Debug\netcoreapp3.1\Service.pdb
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\bin\Debug\netcoreapp3.1\PublicMethod.dll
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\bin\Debug\netcoreapp3.1\PublicMethod.pdb

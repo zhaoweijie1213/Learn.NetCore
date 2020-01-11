@@ -1,0 +1,7 @@
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\PublicMethod\bin\Debug\netcoreapp3.1\PublicMethod.deps.json
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\PublicMethod\bin\Debug\netcoreapp3.1\PublicMethod.dll
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\PublicMethod\bin\Debug\netcoreapp3.1\PublicMethod.pdb
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\PublicMethod\obj\Debug\netcoreapp3.1\PublicMethod.AssemblyInfoInputs.cache
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\PublicMethod\obj\Debug\netcoreapp3.1\PublicMethod.AssemblyInfo.cs
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\PublicMethod\obj\Debug\netcoreapp3.1\PublicMethod.dll
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\PublicMethod\obj\Debug\netcoreapp3.1\PublicMethod.pdb

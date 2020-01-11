@@ -18,4 +18,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HttpOperation\HttpOperation.csproj" />
+    <ProjectReference Include="..\PublicMethod\PublicMethod.csproj" />
+  </ItemGroup>
+
 </Project>

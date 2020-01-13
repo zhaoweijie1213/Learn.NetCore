@@ -15,7 +15,7 @@ namespace Service.AliyunTranslate
 
         public string HttpAliyunTranslate(string Content, Language SourceLanguage, Language TargetLanguage, Scene scene, string FormatType = "text")
         {
-            string res = "";
+            string res;
             // 构建一个 Client，用于发起请求
             IClientProfile profile = DefaultProfile.GetProfile(
                 "cn-hangzhou",
@@ -30,14 +30,16 @@ namespace Service.AliyunTranslate
             try
             {
                 // 构造请求
-                TranslateGeneralRequest request = new TranslateGeneralRequest();
-                request.Method = MethodType.POST; //设置请求
-                request.FormatType = FormatType; //翻译文本的格式  
-                request.Scene = scene.ToString();
-                request.SourceLanguage = SourceLanguage.ToString(); //源语言  
-                request.SourceText = Content; //原文  
-                request.TargetLanguage = targetLanguage; //目标语言  
-                                                         // 发起请求，并得到 Response
+                TranslateGeneralRequest request = new TranslateGeneralRequest
+                {
+                    Method = MethodType.POST, //设置请求
+                    FormatType = FormatType, //翻译文本的格式  
+                    Scene = scene.ToString(),
+                    SourceLanguage = SourceLanguage.ToString(), //源语言  
+                    SourceText = Content, //原文  
+                    TargetLanguage = targetLanguage //目标语言  
+                };
+                // 发起请求，并得到 Response
                 TranslateGeneralResponse response = client.GetAcsResponse(request);
                 if (response.Code == 200)
                 {
@@ -60,7 +62,7 @@ namespace Service.AliyunTranslate
         /// <returns></returns>
         public string HttpAliyunECommerceTranslate(string Content, Language SourceLanguage, Language TargetLanguage, Scene scene,string FormatType ="text")
         {
-            string res = "";
+            string res;
             // 构建一个 Client，用于发起请求
             IClientProfile profile = DefaultProfile.GetProfile(
                 "cn-hangzhou",
@@ -74,13 +76,15 @@ namespace Service.AliyunTranslate
             DefaultAcsClient client = new DefaultAcsClient(profile);
             try
             {
-                TranslateECommerceRequest eCommerceRequest = new TranslateECommerceRequest();
-                eCommerceRequest.Scene = scene.ToString();
-                eCommerceRequest.Method = MethodType.POST;// 设置请求方式，POST
-                eCommerceRequest.FormatType = FormatType;  //翻译文本的格式
-                eCommerceRequest.SourceLanguage = SourceLanguage.ToString();  //源语言
-                eCommerceRequest.SourceText = HttpUtility.UrlEncode(Content, Encoding.GetEncoding("utf-8")); //原文
-                eCommerceRequest.TargetLanguage = targetLanguage;  //目标语言
+                TranslateECommerceRequest eCommerceRequest = new TranslateECommerceRequest
+                {
+                    Scene = scene.ToString(),
+                    Method = MethodType.POST,// 设置请求方式，POST
+                    FormatType = FormatType,  //翻译文本的格式
+                    SourceLanguage = SourceLanguage.ToString(),  //源语言
+                    SourceText = HttpUtility.UrlEncode(Content, Encoding.GetEncoding("utf-8")), //原文
+                    TargetLanguage = targetLanguage  //目标语言
+                };
                 TranslateECommerceResponse response = client.GetAcsResponse(eCommerceRequest);
                 if (response.Code==200)
                 {

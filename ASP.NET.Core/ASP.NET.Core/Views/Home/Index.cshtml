@@ -6,3 +6,138 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+<div class="container-fluid">
+    <form id="formData" class="form-horizontal">
+        <div class="form-group">
+            <select id="TranslationEngine" name="TranslationEngine" class="form-control">
+                <option value="0">机器翻译电商引擎</option>
+                <option value="1">机器翻译通用引擎</option>
+                <option></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="SourceLanguage" class="control-label">源语言:</label>
+            <select id="SourceLanguage" name="SourceLanguage" class="form-control">
+                <option value="0">英文(en)</option>
+                <option value="1" selected="selected">中文(zh)</option>
+                <option value="2">繁体中文(zh-tw)</option>
+                <option value="3">西班牙语(es)</option>
+                <option value="4">俄语(ru)</option>
+                <option value="5">法语(fr)</option>
+                <option value="6">葡萄牙语(pt)</option>
+                <option value="7">德语(de)</option>
+                <option value="8">波兰语(pl)</option>
+                <option value="9">阿拉伯语(ar)</option>
+                <option value="10">土耳其语(土耳其语)</option>
+                <option value="11">泰语(th)</option>
+                <option value="12">越南语(vi)</option>
+                <option value="13">印尼语(id)</option>
+                <option value="14">马来语(ms)</option>
+                <option value="15">日语(ja)</option>
+                <option value="16">韩语(ko)</option>
+            </select>
+            <label for="TargetLanguage" class="control-label">目标语言:</label>
+            <select id="TargetLanguage" name="TargetLanguage" class="form-control">
+                <option value="0">英文(en)</option>
+                <option value="1">中文(zh)</option>
+                <option value="2">繁体中文(zh-tw)</option>
+                <option value="3">西班牙语(es)</option>
+                <option value="4">俄语(ru)</option>
+                <option value="5">法语(fr)</option>
+                <option value="6">葡萄牙语(pt)</option>
+                <option value="7">德语(de)</option>
+                @*<option value="8">德语(de)</option>*@
+                <option value="8">波兰语(pl)</option>
+                <option value="9">阿拉伯语(ar)</option>
+                <option value="10">土耳其语(土耳其语)</option>
+                <option value="11">泰语(th)</option>
+                <option value="12">越南语(vi)</option>
+                <option value="13">印尼语(id)</option>
+                <option value="14">马来语(ms)</option>
+                <option value="15">日语(ja)</option>
+                <option value="16">韩语(ko)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="Scene" class="control-label col-2">选择场景:</label>
+            <select id="Scene" name="Scene" class="form-control col-3">
+                <option value="0">商品标题翻译</option>
+                <option value="1">商品描述翻译</option>
+                <option value="2">买卖家翻译</option>
+                @*<option value="3">通用翻译</option>
+                <option value="4">医疗文档翻译</option>*@
+            </select>
+            <label for="FormatType" class="control-label col-2">选择类型:</label>
+            <select id="FormatType" name="FormatType" class="form-control col-3">
+                <option value="text">文本</option>
+                <option value="html">网页</option>
+            </select>
+            <label for="DoTrans" class="control-label"></label>
+            <input type="button" id="DoTrans" class="btn-block col-1" value="翻译" />
+        </div>
+        <div class="form-group">
+            <div class="col-10">
+                <input hidden="hidden" name="" value=""/>
+                <textarea class="form-control" rows="5" name="Content" id="Content"></textarea>
+            </div>
+            <div class="col-2">⇄</div>
+            <div class="col-10">
+                <textarea class="form-control" rows="5" id="Result"></textarea>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="~/lib/jquery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+
+	$(function () {
+		$.prototype.serializeObject = function () {
+			var a, o, h, i, e;
+			a = this.serializeArray();
+			o = {};
+			h = o.hasOwnProperty;
+			for (i = 0; i < a.length; i++) {
+				e = a[i];
+				if (!h.call(o, e.name)) {
+					o[e.name] = e.value;
+				}
+			}
+			return o;
+		}
+		$("#TranslationEngine").change(function () {
+			// var t = $(this);
+			var html = "";
+			var type = $("#TranslationEngine").val();
+			if (type == 0) {
+				html =  "<option value='0'>商品标题翻译</option>"+
+                "<option value='1'>商品描述翻译</option>"+
+                "<option value='2'>买卖家翻译</option>";
+
+			}
+			else {
+				html = "<option value='3'>通用翻译</option>" +
+					"<option value='4'>医疗文档翻译</option>";
+			}
+            $("#Scene").html(html);
+		});
+        $("#DoTrans").click(function () {
+            debugger;
+            var data = $("#formData").serializeObject();
+            $.ajax({
+                type: "POST",
+                data: data,
+				url: "/Home/Trasnlate",
+                dataType: "json",
+				success: function (res) {
+					debugger;
+                    $("#Result").text(res);
+                },
+                error: function () {
+
+					debugger;
+                }
+            });
+        });
+    });
+</script>
+

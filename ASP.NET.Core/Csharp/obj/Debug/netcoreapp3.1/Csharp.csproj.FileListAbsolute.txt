@@ -98,3 +98,7 @@ D:\Git\Learn.NetCore\ASP.NET.Core\Csharp\obj\Debug\netcoreapp3.1\Csharp.Assembly
 D:\Git\Learn.NetCore\ASP.NET.Core\Csharp\obj\Debug\netcoreapp3.1\Csharp.csproj.CopyComplete
 D:\Git\Learn.NetCore\ASP.NET.Core\Csharp\obj\Debug\netcoreapp3.1\Csharp.dll
 D:\Git\Learn.NetCore\ASP.NET.Core\Csharp\obj\Debug\netcoreapp3.1\Csharp.pdb
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\bin\Debug\netcoreapp3.1\HttpOperation.dll
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\bin\Debug\netcoreapp3.1\PublicMethod.dll
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\bin\Debug\netcoreapp3.1\HttpOperation.pdb
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\bin\Debug\netcoreapp3.1\PublicMethod.pdb

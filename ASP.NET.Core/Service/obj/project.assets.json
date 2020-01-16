@@ -1323,6 +1323,29 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "HttpOperation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "aliyun-net-sdk-ros": "3.1.0"
+        },
+        "compile": {
+          "bin/placeholder/HttpOperation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HttpOperation.dll": {}
+        }
+      },
+      "PublicMethod/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/PublicMethod.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PublicMethod.dll": {}
+        }
       }
     }
   },
@@ -5076,13 +5099,25 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "HttpOperation/1.0.0": {
+      "type": "project",
+      "path": "../HttpOperation/HttpOperation.csproj",
+      "msbuildProject": "../HttpOperation/HttpOperation.csproj"
+    },
+    "PublicMethod/1.0.0": {
+      "type": "project",
+      "path": "../PublicMethod/PublicMethod.csproj",
+      "msbuildProject": "../PublicMethod/PublicMethod.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "HttpOperation >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.0",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.0",
+      "PublicMethod >= 1.0.0",
       "aliyun-net-sdk-alimt >= 1.0.3",
       "aliyun-net-sdk-ros >= 3.1.0"
     ]
@@ -5117,7 +5152,14 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\HttpOperation\\HttpOperation.csproj": {
+              "projectPath": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\HttpOperation\\HttpOperation.csproj"
+            },
+            "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\PublicMethod\\PublicMethod.csproj": {
+              "projectPath": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\PublicMethod\\PublicMethod.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

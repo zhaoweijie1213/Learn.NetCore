@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using EntityDbContnext.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 
 namespace EntityDbContnext
@@ -13,5 +14,6 @@ namespace EntityDbContnext
         { 
             
         }
+        public DbSet<AliyunTranslateLanguage> AliyunTranslateLanguage { get; set; }
     }
 }

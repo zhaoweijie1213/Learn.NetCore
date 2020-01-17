@@ -1,0 +1,25 @@
+得到root权限:
+sudo -i
+
+BBR开启:
+wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+
+魔改BBR:
+wget --no-check-certificate -q0 'BBR.sh' 'https://moeclub.org/attachment/LinuxShell/BBR.sh' && chmod a+x BBR.sh && bash BBR.sh -f
+
+yum -y install wget
+
+wget --no-check-certificate https://raw.githubusercontent.com/oneNF/shadowsocks_Install/master/shadowsocksR.sh
+
+chmod +x shadowsocksR.sh
+
+./shadowsocksR.sh 2>&1| tee shadowsocksR.log
+
+最终SSR Info
+
+Your Server IP        :  35.220.160.6 
+Your Server Port      :  8388 
+Your Password         :  19971108 
+Your Protocol         :  auth_sha1_v4 
+Your obfs             :  plain 
+Your Encryption Method:  aes-256-cfb 

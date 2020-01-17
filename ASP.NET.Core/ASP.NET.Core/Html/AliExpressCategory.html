@@ -1,0 +1,631 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>AliExpress.com</title>
+	<style>
+		html {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%
+		}
+
+		html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, details, dialog, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline
+		}
+
+		table, caption, tbody, tfoot, thead, tr, th, td {
+			margin: 0;
+			padding: 0;
+			font-size: 100%;
+			font: inherit
+		}
+
+		article, aside, details, dialog, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+			display: block
+		}
+
+		audio, canvas, video {
+			display: inline-block;
+			*display: inline;
+			*zoom: 1
+		}
+
+			audio:not([controls]) {
+				display: none;
+				height: 0
+			}
+
+		ol, ul {
+			list-style: none
+		}
+
+		ol {
+			list-style: decimal
+		}
+
+		ul {
+			list-style: disc
+		}
+
+		li {
+			margin-left: 30px;
+			display: list-item
+		}
+
+		dd {
+			margin: 0 0 0 40px
+		}
+
+		nav ul, nav ol {
+			list-style: none;
+			list-style-image: none
+		}
+
+		ul ul, ol ul {
+			list-style-type: circle
+		}
+
+			ol ol ul, ol ul ul, ul ol ul, ul ul ul {
+				list-style-type: square
+			}
+
+		table {
+			border-collapse: collapse
+		}
+
+		caption, th, td {
+			font-weight: 400;
+			float: none !important
+		}
+
+		p {
+			margin: 0 0 1.5em
+		}
+
+		hr {
+			clear: both;
+			height: 0;
+			overflow: hidden
+		}
+
+		h1 {
+			margin-bottom: .5em
+		}
+
+		h2 {
+			margin-bottom: .75em
+		}
+
+		h3 {
+			margin-bottom: 1em
+		}
+
+		h4 {
+			margin-bottom: 1.25em
+		}
+
+		h5 {
+			margin-bottom: 1.5em
+		}
+
+		h6 {
+		}
+
+		blockquote:before, blockquote:after, q:before, q:after {
+			content: '';
+			content: none
+		}
+
+		blockquote, q {
+			quotes: "" ""
+		}
+
+		blockquote {
+			margin: 1em 40px
+		}
+
+		dfn {
+			font-style: italic
+		}
+
+		mark {
+			background: #ff0;
+			color: #000
+		}
+
+		code, kbd, pre, samp {
+			font-family: monospace,serif;
+			_font-family: 'courier new',monospace;
+			font-size: 1em
+		}
+
+		pre {
+			white-space: pre;
+			white-space: pre-wrap;
+			word-wrap: break-word
+		}
+
+		sub, sup, small {
+			font-size: 75%
+		}
+
+		sub, sup {
+			line-height: 0;
+			position: relative;
+			vertical-align: baseline
+		}
+
+		sub {
+			bottom: -.25em
+		}
+
+		sup {
+			top: -.5em
+		}
+
+		b, strong {
+			font-weight: 700
+		}
+
+		abbr, acronym {
+			border: 0;
+			font-variant: normal
+		}
+
+		del {
+			text-decoration: line-through
+		}
+
+		img {
+			color: transparent;
+			font-size: 0;
+			border: 0;
+			vertical-align: middle;
+			-ms-interpolation-mode: bicubic
+		}
+
+		a img {
+			border: none
+		}
+
+		svg:not(:root) {
+			overflow: hidden
+		}
+
+		fieldset {
+			border: 1px solid silver;
+			margin: 0 2px;
+			padding: .35em .625em .75em
+		}
+
+		legend {
+			border: 0;
+			padding: 0;
+			white-space: normal;
+			*margin-left: -7px
+		}
+
+		button, input, select, textarea {
+			font-size: 100%;
+			margin: 0;
+			vertical-align: baseline;
+			*vertical-align: middle
+		}
+
+		:focus {
+			outline: 0
+		}
+
+		button, input, select, textarea {
+			margin: 0;
+			font-size: 100%;
+			vertical-align: middle
+		}
+
+		button, input {
+			overflow: visible;
+			line-height: normal
+		}
+
+			button::-moz-focus-inner, input::-moz-focus-inner {
+				padding: 0;
+				border: 0
+			}
+
+			button, html input[type=button], input[type=reset], input[type=submit] {
+				-webkit-appearance: button;
+				cursor: pointer;
+				border-radius: 0;
+				*overflow: visible
+			}
+
+				button[disabled], input[disabled] {
+					cursor: default
+				}
+
+			input[type=checkbox], input[type=radio] {
+				box-sizing: border-box;
+				padding: 0;
+				*height: 13px;
+				*width: 13px
+			}
+
+			input[type=search] {
+				-webkit-appearance: textfield;
+				-moz-box-sizing: content-box;
+				-webkit-box-sizing: content-box;
+				box-sizing: content-box
+			}
+
+				input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+					-webkit-appearance: none
+				}
+
+			button::-moz-focus-inner, input::-moz-focus-inner {
+				border: 0;
+				padding: 0
+			}
+
+		textarea {
+			overflow: auto;
+			vertical-align: top
+		}
+
+		html {
+			font-size: 100%
+		}
+
+		body {
+			font-size: 75%;
+			color: #000;
+			font-family: Open Sans,Arial,Helvetica,sans-senif,SimSun,"?????“";
+			line-height: 1.3
+		}
+
+		hr {
+			border: 0 #ccc solid;
+			border-top-width: 1px
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: 400
+		}
+
+		h1 {
+			font-size: 3em;
+			line-height: 1
+		}
+
+		h2 {
+			font-size: 2em;
+			line-height: 1
+		}
+
+		h3 {
+			font-size: 1.5em;
+			line-height: 1
+		}
+
+		h4 {
+			font-size: 1.2em;
+			line-height: 1.25
+		}
+
+		h5 {
+			font-size: 1em;
+			font-weight: 700
+		}
+
+		h6 {
+			font-size: 1em;
+			font-weight: 700
+		}
+
+		a {
+			color: #06c;
+			text-decoration: none
+		}
+
+			a:hover {
+				color: #f90;
+				text-decoration: underline
+			}
+
+		.container {
+			margin-right: auto;
+			margin-left: auto;
+			padding-left: 0;
+			padding-right: 0;
+			width: 760px
+		}
+
+		@media \0screen {
+			.container {
+				width: 1200px\9
+			}
+		}
+
+		.container:before, .container:after {
+			content: " ";
+			display: table
+		}
+
+		.container:after {
+			clear: both
+		}
+
+		@media (min-width:760px) {
+			.container {
+				padding-left: 20px;
+				padding-right: 20px;
+				width: auto
+			}
+		}
+
+		@media (min-width:1020px) {
+			.container {
+				padding-left: 15px;
+				padding-right: 15px;
+				width: auto
+			}
+		}
+
+		@media (min-width:1260px) {
+			.container {
+				padding-left: 0;
+				padding-right: 0;
+				margin-left: auto;
+				margin-right: auto;
+				width: 1200px
+			}
+		}
+
+		#header {
+			height: 71px;
+			border-bottom: 1px solid #e8e8e8;
+		}
+
+		.logo {
+			float: left;
+			padding: 17px 20px 0 15px;
+			margin-bottom: 0
+		}
+
+			.logo a {
+				float: left;
+				width: 134px;
+				height: 42px;
+				text-indent: -999em;
+				overflow: hidden;
+				background-image: url(http://i02.i.aliimg.com/wimg/site/group-en/en/buyer/single/logo-1x.png?t=9c43c078_0);
+				background-image: -webkit-image-set(url(http://i02.i.aliimg.com/wimg/site/group-en/en/buyer/single/logo-1x.png?t=9c43c078_0) 1x,url(http://i02.i.aliimg.com/wimg/site/group-en/en/buyer/single/logo-2x.png?t=a7c579bf_0) 2x);
+				background-repeat: no-repeat
+			}
+
+		#footer {
+			clear: both;
+			padding: 10px 0;
+			text-align: center;
+			border-top: 1px solid #CCC;
+			margin-top: 15px;
+			font: .85em/14px verdana;
+		}
+
+		#ref-location {
+			color: #CCC;
+			font-size: 10px;
+			font-family: verdana;
+		}
+	</style>
+
+	<link rel="stylesheet" href="//bixi.alicdn.com/punish/static/style.css" />
+
+</head>
+
+<body>
+	<script>
+		with (document) with (body) with (insertBefore(createElement("script"), firstChild)) setAttribute("exparams", "userid=&aplus&ali_beacon_id=&ali_apache_id=11%2e134%2e216%2e22%2e1578537706189%2e212331%2e9&ali_apache_track=mt%3d1%7cms%3d%7cmid%3dcn743785327lzlae&ali_apache_tracktmp=W%5fsigned%3dY&dmtrack_c={}&hn=ae%2dglosearch%2dweb011176047056%2eus%2eoc27&asid=AQAAAACBiyFeSVGraQAAAABGdvXDP+ja+Q==&sidx=0", id = "beacon-aplus", src = "//assets.alicdn.com/g/alilog/??aplus_plugin_aefront/index.js,mlog/aplus_v2.js")
+	</script>
+
+	<div id="page">
+
+		<div id="header">
+			<div class="container">
+				<h1 class="logo"><a href="http://www.aliexpress.com">AliExpress</a></h1>
+			</div>
+		</div>
+
+		<div class="ui-unusual ui-unusual-busy">
+			<div class="ui-unusual-content">
+
+				<h1 id="tips-title"></h1>
+				<p>
+					<div class="ui-unusual-summary" id="tips-summary"></div>
+				</p>
+				<p>
+
+					<div id="_umfp" style="display:inline;width:1px;height:1px;overflow:hidden">
+						<img src="//ynuf.alipay.com/service/clear.png?xt=eb82e2233049dbedbf0a1aa2fa3cd779&xa=X82Y" />
+					</div>
+				</p>
+				<div class="reason">
+					<head>
+					</head>
+					<script>
+						var loadScript = function (src, callback) {
+							var script = document.createElement('script'),
+								head = document.getElementsByTagName('head')[0];
+							script.type = 'text/javascript';
+							script.charset = 'UTF-8';
+							script.src = src;
+							if (script.addEventListener) {
+								script.addEventListener('load',
+									function () {
+										callback();
+									},
+									false);
+							} else if (script.attachEvent) {
+								script.attachEvent('onreadystatechange',
+									function () {
+										var target = window.event.srcElement;
+										if (target.readyState == 'loaded') {
+											callback();
+										}
+									});
+							}
+							head.appendChild(script);
+						};
+						var scene = "";
+						if (navigator.userAgent.match(/.*(iPhone|iPad|Android|ios|SymbianOS|Windows Phone).*/i)) {
+							scene = "register_h5";
+							loadScript('//g.alicdn.com/sd/nch5/index.js', ncinit);
+						} else {
+							scene = "register";
+							loadScript('//g.alicdn.com/sd/ncpc/nc.js', ncinitpc);
+						}
+						function ncinitpc() {
+							UA_Opt.Flag = 880846;
+							document.getElementById("nocaptcha").style.cssText = "margin-top:-10px";
+							var nc = noCaptcha({
+								renderTo: "#nocaptcha",
+								appkey: "X82Y__7eaec96e684b209bc23d785f13446051",
+								token: "31404e20e488788446cc9109d223abe8",
+								scene: scene,
+								is_Opt: 1,
+								language: "en",
+								callback: function (data) {
+									document.getElementById("nc-session-id").value = data.csessionid;
+									document.getElementById("nc-sig").value = data.sig;
+									document.getElementById("nc-verify-form").submit();
+								}
+							});
+						}
+						function ncinit() {
+							UA_Opt.Flag = 880846;
+							NoCaptcha.init({
+								renderTo: "#nocaptcha",
+								appkey: "X82Y__7eaec96e684b209bc23d785f13446051",
+								token: "31404e20e488788446cc9109d223abe8",
+								scene: scene,
+								language: "en",
+								is_Opt: 1,
+								callback: function (data) {
+									document.getElementById("nc-session-id").value = data.csessionid;
+									document.getElementById("nc-sig").value = data.sig;
+									document.getElementById("nc-verify-form").submit();
+								}
+							});
+							NoCaptcha.setEnabled(true);
+						}
+					</script>
+					<center>
+						<div id="nocaptcha" style="margin-top:20px">
+						</div>
+					</center>
+					<form id="nc-verify-form" action="//www.aliexpress.com:443/category/200002394/accessories-parts.html/_____tmd_____/verify/"
+						  method="GET">
+						<input name="nc_token" value="31404e20e488788446cc9109d223abe8" type="hidden">
+						<input name="nc_session_id" id="nc-session-id" value="" type="hidden">
+						<input name="nc_sig" id="nc-sig" value="" type="hidden">
+						<input name="x5secdata" id="x5secdata" type="hidden" value="5e0c8e1365474455070961b803bd560607b52cabf5960afff39b64ce58073f78a189947e9a397fdf240c55d920f623b02aeb9455a7e24af28ac2e97b74ad2a615243cbbeab2e8d63aa64c05ed8ec319efb0661683b902c217ba9004441c3e42e1f7b11ffd5c77bcdd76cfb4200c2b549d7a69f689e1e3ba5f7c0f3bfdf92e4612adab4c781b8e3ad89b788aa743737d6e9f8dfe961e67378694400718c6f815e3271113286c73be26325a0d43719169e5b451f036ca86c1f8b94bad9bae62a8e38ad190abcbb48da9c033c779d07489bebf403b0135e7fdd1cee198fc35e3a96184ef8024e27def8cce485cb401ee26f39ad2fb3f254eab4d35a4a2ce477a28fb068bbeed591d32450270c8f8405c84cc5762a95fc9f16a859fce3419091f9f5ec4f463f8904aab5621fd1c3dbca54cef0d934b668ca77e6b3efea1180098759922db81be2c6254b82c2b713c0359a719638b2839773ea2a9a682f58ed0bef5443dfd827417b53ce3644c48123db7cc896178b85d20d318d494a1185cda2236a8124254a46fd809e16dd03f63ab028934062f3c2206668eb92bad6b34e0dd0de04d00b16733e416d3cc09bfcb48f8f24d442933a57e108109ecec26e236a1f740bb9efa91b866c2237ecfadd732890312c38dead1091893372392858ab34c0c3f5e2b3e19a3d1f171d7330735ce1cd87">
+						<input name="x5step" id="x5step" type="hidden" value="100">
+						<input name="nc_app_key" id="nc_app_key" type="hidden" value="X82Y__7eaec96e684b209bc23d785f13446051">
+					</form>
+					</script>
+					<script>
+						if (window.location.host == "world.taobao.com") {
+							document.getElementById("nc-verify-form").action = document.getElementById("nc-verify-form").action.replace("buy.taobao.com", "world.taobao.com/buy");
+						}
+						if (window.location.host == "tw.taobao.com") {
+							document.getElementById("nc-verify-form").action = document.getElementById("nc-verify-form").action.replace("buy.taobao.com", "tw.taobao.com/buy");
+						}
+					</script>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="footer">
+		<a href="http://www.alibaba.com/aboutalibaba/index.html" rel="nofollow"><strong>Company Info</strong></a> - <a href="http://www.alibaba.com/aboutalibaba/partnership_with_alibaba.html" rel="nofollow"><strong>Partnerships</strong></a><br />
+		<a href="http://www.aliexpress.com/">Online Shopping</a> - <a href="http://www.aliexpress.com/all-wholesale-products.html" rel="nofollow">Buy</a> - <a href="http://seller.aliexpress.com/" rel="nofollow">Sell</a> - <a href="http://www.aliexpress.com/activities/promotions/index.html" rel="nofollow">All Promotions</a> - <a href="http://escrow.alibaba.com/?tracelog=ws_topbar" rel="nofollow">My Orders</a> - <a href="http://www.aliexpress.com/help/home.html" rel="nofollow">Help</a> - <a href="http://www.aliexpress.com/sitemap.html">Site Map</a> - <a href="http://www.aliexpress.com/help/contactus.htm" rel="nofollow">Customer Service</a> - <a href="http://www.aliexpress.com/about/info.html" rel="nofollow">About AliExpress</a> - <a rel="follow" href="http://m.aliexpress.com" target="_blank">Mobile Site</a>
+
+		<p>
+			Browse Alphabetically:
+			<a href="http://www.aliexpress.com/product.html">All Products</a>,
+			<a href="http://www.aliexpress.com/free-shipping.html">Free Shipping</a>,
+			<a href="http://www.aliexpress.com/wholesale.html">Wholesale Product</a>,
+			<a href="http://www.aliexpress.com/promotion.html">Promotion</a>,
+			<a href="http://www.aliexpress.com/price.html">Price</a>,
+			<a href="http://www.aliexpress.com/discount.html">Discount</a>,
+			<a href="http://www.aliexpress.com/compare.html">Compare</a>
+			<br />
+			<a href="http://fr.aliexpress.com">French</a>,
+			<a href="http://de.aliexpress.com">German</a>,
+			<a href="http://it.aliexpress.com">Italian</a>,
+			<a href="http://ja.aliexpress.com">Japanese</a>,
+			<a href="http://ko.aliexpress.com">Korea</a>,
+			<a href="http://nl.aliexpress.com">Netherlands</a>,
+			<a href="http://pt.aliexpress.com">Portuguese</a>,
+			<a href="http://ru.aliexpress.com">Russian</a>,
+			<a href="http://es.aliexpress.com">Spanish</a>,
+			<a href="http://ar.aliexpress.com">Arabic</a>,
+			<a href="http://th.aliexpress.com">Thai</a>,
+			<a href="http://tr.aliexpress.com">Turkish</a>,
+			<a href="http://vi.aliexpress.com">Vietnamese</a>,
+			<a href="http://he.aliexpress.com">Hebrew</a>
+			<br /><br />
+			<a rel="nofollow" href="http://www.alibabagroup.com/en/global/home">Alibaba Group</a>
+			| <a rel="nofollow" target="_blank" href="http://www.taobao.com/">Taobao Marketplace</a>
+			| <a rel="nofollow" target="_blank" href="http://www.tmall.com/">Tmall.com</a>
+			| <a rel="nofollow" target="_blank" href="http://ju.taobao.com/">Juhuasuan</a>
+			| <a rel="nofollow" target="_blank" href="http://www.aliexpress.com/">AliExpress</a>
+			| <a rel="nofollow" target="_blank" href="http://www.alibaba.com/">Alibaba.com</a>
+			| <a rel="nofollow" target="_blank" href="http://www.1688.com/">1688.com</a>
+			| <a rel="nofollow" target="_blank" href="http://www.alimama.com/">Alimama</a>
+			| <a rel="nofollow" target="_blank" href="http://www.aliyun.com/">Alibaba Cloud Computing</a>
+			| <a rel="nofollow" target="_blank" href="http://www.yunos.com/">YunOS</a>
+			| <a rel="nofollow" target="_blank" href="http://aliqin.tmall.com/">AliTelecom</a>
+			| <a rel="nofollow" target="_blank" href="http://www.net.cn/">HiChina</a>
+			| <a rel="nofollow" target="_blank" href="http://trip.taobao.com/">Taobao Travel</a>
+			| <a rel="nofollow" target="_black" href="http://www.xiami.com/">Xiami</a>
+			| <a rel="nofollow" target="_black" href="http://www.laiwang.com/">Laiwang</a>
+			| <a rel="nofollow" target="_blank" href="https://intl.alipay.com/">Alipay</a>
+		</p>
+		<a href="http://news.alibaba.com/article/detail/help/100454423-1-product-listing-policy.html" rel="nofollow">Product Listing Policy</a> - <a href="http://news.alibaba.com/article/detail/help/100453304-1-intellectual-property-rights-%2528ipr%2529-protection.html" rel="nofollow">Intellectual Property Policy and Infringement Claims</a> - <a href="http://news.alibaba.com/article/detail/help/100453303-1-privacy-policy.html" rel="nofollow">Privacy Policy</a> - <a href="http://news.alibaba.com/article/detail/help/100453293-1-terms-use.html" rel="nofollow">Terms of Use</a> - <a href="http://escrow.aliexpress.com/buyerprotection/index.html?tracelog=ws_topbar" rel="nofollow">Safe Trading Tips</a> - <a href="http://legal.alibaba.com/legal/site/login/login.htm?site_type=international&language_id=english" rel="nofollow">Report Intellectual Property Right Infringement</a>
+
+		<br /><a rel="nofollow" href="http://www.alibaba.com/trade/servlet/page/static/copyright_policy">Copyright</a> &copy; 2010-2018 AliExpress.com. All rights reserved.
+	</div>
+	<script>
+		var referrer = document.referrer;
+		if (referrer && referrer.indexOf("__tmd__") === -1) {
+			//如果包含 referrer ，且 referrer 非 霸下验证页面
+			localStorage.x5referer = document.referrer;
+		} else {
+			localStorage.x5referer = window.location.href;
+		}
+	</script>
+	<script src="//gw.alipayobjects.com/os/rmsportal/cCnQbezCfJOFVABlQnqS.js"></script>
+	<script type="text/javascript">
+		i18n.defaultLocale = "en-US";
+		i18n.language = {
+			"en-US": {
+				"title": "OOPS!",
+				"summary": "Please slide to verify"
+			}
+		};
+		document.getElementById("tips-title").innerHTML = i18n("title");
+		document.getElementById("tips-summary").innerHTML = i18n("summary");
+	</script>
+
+</body>
+</html>

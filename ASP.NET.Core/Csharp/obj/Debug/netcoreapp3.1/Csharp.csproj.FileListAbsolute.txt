@@ -102,3 +102,5 @@ D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\bin\Debug\netcoreapp3.1\HttpOperation
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\bin\Debug\netcoreapp3.1\PublicMethod.dll
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\bin\Debug\netcoreapp3.1\HttpOperation.pdb
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\bin\Debug\netcoreapp3.1\PublicMethod.pdb
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\bin\Debug\netcoreapp3.1\HtmlAgilityPack.dll
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\Csharp\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll

@@ -19,14 +19,13 @@ namespace ASP.NET.Core.Controllers
         [HttpPost]
         public IActionResult Trasnlate(AliyunTranslateParams translateParams)
         {
-            var result = "";
+            string result;
             if (translateParams.TranslationEngine == 0)
             {
                 result = translateHelper.HttpAliyunECommerceTranslate(translateParams.Content,
                 (Language)translateParams.SourceLanguage,
                 (Language)translateParams.TargetLanguage,
                 (Scene)translateParams.Scene, translateParams.FormatType);
-
             }
             else
             {

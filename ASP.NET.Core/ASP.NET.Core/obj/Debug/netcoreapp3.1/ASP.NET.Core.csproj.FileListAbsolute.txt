@@ -141,3 +141,4 @@ D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\obj\Debug\netcoreapp3.1\ASP.NET
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\bin\Debug\netcoreapp3.1\HtmlAgilityPack.dll
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\obj\Debug\netcoreapp3.1\Razor\Views\Translate\LanguageSetcshtml.cshtml.g.cs
+D:\A_zwj\Learn.NetCore\ASP.NET.Core\ASP.NET.Core\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs

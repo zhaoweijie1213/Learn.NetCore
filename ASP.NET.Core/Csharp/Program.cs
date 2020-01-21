@@ -1,4 +1,5 @@
 ﻿using System;
+using PublicMethod.HtmlGrab;
 using Service.AliyunTranslate;
 using static Service.AliyunTranslate.TranslateHelper;
 
@@ -10,18 +11,28 @@ namespace Csharp
         {
             do
             {
-                Console.WriteLine("通用版或者电商版？Y/N");
-                string s = Console.ReadLine();
-                if (s == "Y" || s == "y")
-                {
-                    TranslateContent();
-                }
-                else
-                {
-                    ECommerceTranslate();
-                }
+                //Console.WriteLine("通用版或者电商版？Y/N");
+                //string s = Console.ReadLine();
+                //if (s == "Y" || s == "y")
+                //{
+                //    TranslateContent();
+                //}
+                //else
+                //{
+                //    ECommerceTranslate();
+                //}
+                Console.WriteLine("-----手机号码-----");
+                var phone = Console.ReadLine();
+                var status = RegexHelper.IsPhoneNum(phone);
+                Console.WriteLine($"-----{status}-----");
+
+
+                Console.WriteLine("-----邮箱号-----");
+                var email = Console.ReadLine();
+                status = RegexHelper.IsEmail(email);
+                Console.WriteLine($"-----{status}-----");
             } while (true);
-         
+
         }
         public static void TranslateContent()
         {

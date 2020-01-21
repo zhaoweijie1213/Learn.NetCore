@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9C11CAE5-5188-4E71-825B-68FC3135728A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lazop.Api</RootNamespace>
+    <AssemblyName>LazopSdk</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FastJson\dynamic.cs" />
+    <Compile Include="FastJson\Formatter.cs" />
+    <Compile Include="FastJson\Getters.cs" />
+    <Compile Include="FastJson\JSON.cs" />
+    <Compile Include="FastJson\JsonParser.cs" />
+    <Compile Include="FastJson\JsonSerializer.cs" />
+    <Compile Include="FastJson\Reflection.cs" />
+    <Compile Include="FastJson\SafeDictionary.cs" />
+    <Compile Include="LazopRequest.cs" />
+    <Compile Include="Util\Constants.cs" />
+    <Compile Include="LazopClient.cs" />
+    <Compile Include="LazopLogger.cs" />
+    <Compile Include="ILazopClient.cs" />
+    <Compile Include="ILazopLogger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LazopDictionary.cs" />
+    <Compile Include="LazopException.cs" />
+    <Compile Include="LazopResponse.cs" />
+    <Compile Include="Util\FileItem.cs" />
+    <Compile Include="Util\LazopUtils.cs" />
+    <Compile Include="Util\WebUtils.cs" />
+    <Compile Include="Util\UrlConstants.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

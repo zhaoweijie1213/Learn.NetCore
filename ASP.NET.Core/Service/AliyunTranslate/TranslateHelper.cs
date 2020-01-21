@@ -33,11 +33,11 @@ namespace Service.AliyunTranslate
                 TranslateGeneralRequest request = new TranslateGeneralRequest
                 {
                     Method = MethodType.POST, //设置请求
-                    FormatType = FormatType, //翻译文本的格式  
+                    FormatType = FormatType, //翻译文本的格式
                     Scene = scene.ToString(),
-                    SourceLanguage = SourceLanguage.ToString(), //源语言  
-                    SourceText = Content, //原文  
-                    TargetLanguage = targetLanguage //目标语言  
+                    SourceLanguage = SourceLanguage.ToString(), //源语言
+                    SourceText = Content, //原文
+                    TargetLanguage = targetLanguage //目标语言
                 };
                 // 发起请求，并得到 Response
                 TranslateGeneralResponse response = client.GetAcsResponse(request);

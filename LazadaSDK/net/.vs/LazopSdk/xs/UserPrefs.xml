@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{1EEB2B97-EEC8-4EA7-9FA1-B2AFA29996F8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Util/WebUtils.cs">
+    <Files>
+      <File FileName="Test/Program.cs" Line="32" Column="6" />
+      <File FileName="ILazopClient.cs" Line="1" Column="1" />
+      <File FileName="ILazopLogger.cs" Line="12" Column="14" />
+      <File FileName="LazopClient.cs" Line="123" Column="65" />
+      <File FileName="LazopDictionary.cs" Line="1" Column="1" />
+      <File FileName="LazopResponse.cs" Line="1" Column="1" />
+      <File FileName="LazopLogger.cs" Line="194" Column="17" />
+      <File FileName="Util/Constants.cs" Line="33" Column="49" />
+      <File FileName="Test/Program-bak.cs" Line="21" Column="45" />
+      <File FileName="Util/LazopUtils.cs" Line="71" Column="17" />
+      <File FileName="Util/WebUtils.cs" Line="119" Column="25" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.LazopTest PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

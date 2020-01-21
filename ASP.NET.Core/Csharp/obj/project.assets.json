@@ -51,6 +51,15 @@
           "lib/netstandard2.0/HtmlAgilityPack.dll": {}
         }
       },
+      "LazopSdk/2.0.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/LazopSdk.dll": {}
+        },
+        "runtime": {
+          "lib/LazopSdk.dll": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
         "type": "package",
         "compile": {
@@ -1799,6 +1808,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "LazopSdk": "2.0.0.1",
           "aliyun-net-sdk-ros": "3.1.0"
         },
         "compile": {
@@ -1925,6 +1935,18 @@
         "lib/uap10.0/HtmlAgilityPack.dll",
         "lib/uap10.0/HtmlAgilityPack.pdb",
         "lib/uap10.0/HtmlAgilityPack.pri"
+      ]
+    },
+    "LazopSdk/2.0.0.1": {
+      "sha512": "GAl923cnwItZ82Y8I1DPUg5M/CusUpEMOvtYXH04bGt7JaxSN2qcAWF4uiUg+HcVoPf2OpxwGLcrqQLM6QmSVw==",
+      "type": "package",
+      "path": "lazopsdk/2.0.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lazopsdk.2.0.0.1.nupkg.sha512",
+        "lazopsdk.nuspec",
+        "lib/LazopSdk.dll"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
@@ -6367,6 +6389,16 @@
       "warningLevel": 1,
       "message": "aliyun-net-sdk-ros 3.1.0 未提供依赖项 Newtonsoft.Json (<= 12.0.2) 的包含下限。已解决 Newtonsoft.Json 3.5.8 的近似最佳匹配。",
       "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8”而不是项目目标框架“.NETCoreApp,Version=v3.1”还原包“LazopSdk 2.0.0.1”。此包可能与项目不完全兼容。",
+      "libraryId": "LazopSdk",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]

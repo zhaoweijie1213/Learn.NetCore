@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LeetCodeWeb</name>
+    </assembly>
+    <members>
+        <member name="T:LeetCodeWeb.Controllers.LeetCodeController">
+            <summary>
+            leetCode
+            </summary>
+        </member>
+        <member name="M:LeetCodeWeb.Controllers.LeetCodeController.GetName">
+            <summary>
+            test方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:LeetCodeWeb.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LeetCodeWeb.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:LeetCodeWeb.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LeetCodeWeb.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LeetCodeWeb.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            服务配置
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:LeetCodeWeb.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            此方法由运行时调用,使用此方法配置HTTP请求管道
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="T:LeetCodeWeb.View.IndexModel">
+            <summary>
+            首页
+            </summary>
+        </member>
+        <member name="M:LeetCodeWeb.View.IndexModel.OnGet">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

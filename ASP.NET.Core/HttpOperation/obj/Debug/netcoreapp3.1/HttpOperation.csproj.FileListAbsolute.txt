@@ -6,3 +6,12 @@ D:\A_zwj\Learn.NetCore\ASP.NET.Core\HttpOperation\bin\Debug\netcoreapp3.1\HttpOp
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\HttpOperation\obj\Debug\netcoreapp3.1\HttpOperation.dll
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\HttpOperation\obj\Debug\netcoreapp3.1\HttpOperation.pdb
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\HttpOperation\obj\Debug\netcoreapp3.1\HttpOperation.csprojAssemblyReference.cache
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\HttpOperation\bin\Debug\netcoreapp3.1\HttpOperation.deps.json
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\HttpOperation\bin\Debug\netcoreapp3.1\HttpOperation.dll
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\HttpOperation\bin\Debug\netcoreapp3.1\HttpOperation.pdb
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\HttpOperation\obj\Debug\netcoreapp3.1\HttpOperation.csprojAssemblyReference.cache
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\HttpOperation\obj\Debug\netcoreapp3.1\HttpOperation.AssemblyInfoInputs.cache
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\HttpOperation\obj\Debug\netcoreapp3.1\HttpOperation.AssemblyInfo.cs
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\HttpOperation\obj\Debug\netcoreapp3.1\HttpOperation.csproj.CoreCompileInputs.cache
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\HttpOperation\obj\Debug\netcoreapp3.1\HttpOperation.dll
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\HttpOperation\obj\Debug\netcoreapp3.1\HttpOperation.pdb

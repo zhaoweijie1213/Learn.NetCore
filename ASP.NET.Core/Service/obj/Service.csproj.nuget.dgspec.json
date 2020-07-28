@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\Service\\Service.csproj": {}
+    "C:\\Kizuna\\Git\\Learn.NetCore\\ASP.NET.Core\\Service\\Service.csproj": {}
   },
   "projects": {
-    "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\HttpOperation\\HttpOperation.csproj": {
+    "C:\\Kizuna\\Git\\Learn.NetCore\\ASP.NET.Core\\HttpOperation\\HttpOperation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\HttpOperation\\HttpOperation.csproj",
+        "projectUniqueName": "C:\\Kizuna\\Git\\Learn.NetCore\\ASP.NET.Core\\HttpOperation\\HttpOperation.csproj",
         "projectName": "HttpOperation",
-        "projectPath": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\HttpOperation\\HttpOperation.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\HttpOperation\\obj\\",
+        "projectPath": "C:\\Kizuna\\Git\\Learn.NetCore\\ASP.NET.Core\\HttpOperation\\HttpOperation.csproj",
+        "packagesPath": "C:\\Users\\GISLIFE\\.nuget\\packages\\",
+        "outputPath": "C:\\Kizuna\\Git\\Learn.NetCore\\ASP.NET.Core\\HttpOperation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\GISLIFE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -27,6 +27,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\GISLIFE\\AppData\\Local\\Esri\\NuGet": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,7 +50,7 @@
             },
             "aliyun-net-sdk-ros": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.3.1, )"
             }
           },
           "imports": [
@@ -67,25 +68,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\PublicMethod\\PublicMethod.csproj": {
+    "C:\\Kizuna\\Git\\Learn.NetCore\\ASP.NET.Core\\PublicMethod\\PublicMethod.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\PublicMethod\\PublicMethod.csproj",
+        "projectUniqueName": "C:\\Kizuna\\Git\\Learn.NetCore\\ASP.NET.Core\\PublicMethod\\PublicMethod.csproj",
         "projectName": "PublicMethod",
-        "projectPath": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\PublicMethod\\PublicMethod.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\PublicMethod\\obj\\",
+        "projectPath": "C:\\Kizuna\\Git\\Learn.NetCore\\ASP.NET.Core\\PublicMethod\\PublicMethod.csproj",
+        "packagesPath": "C:\\Users\\GISLIFE\\.nuget\\packages\\",
+        "outputPath": "C:\\Kizuna\\Git\\Learn.NetCore\\ASP.NET.Core\\PublicMethod\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\GISLIFE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -94,6 +95,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\GISLIFE\\AppData\\Local\\Esri\\NuGet": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -112,7 +114,7 @@
           "dependencies": {
             "HtmlAgilityPack": {
               "target": "Package",
-              "version": "[1.11.17, )"
+              "version": "[1.11.24, )"
             }
           },
           "imports": [
@@ -130,25 +132,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\Service\\Service.csproj": {
+    "C:\\Kizuna\\Git\\Learn.NetCore\\ASP.NET.Core\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Kizuna\\Git\\Learn.NetCore\\ASP.NET.Core\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\Service\\Service.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\Service\\obj\\",
+        "projectPath": "C:\\Kizuna\\Git\\Learn.NetCore\\ASP.NET.Core\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\GISLIFE\\.nuget\\packages\\",
+        "outputPath": "C:\\Kizuna\\Git\\Learn.NetCore\\ASP.NET.Core\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\GISLIFE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -157,16 +159,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\GISLIFE\\AppData\\Local\\Esri\\NuGet": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\HttpOperation\\HttpOperation.csproj": {
-                "projectPath": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\HttpOperation\\HttpOperation.csproj"
+              "C:\\Kizuna\\Git\\Learn.NetCore\\ASP.NET.Core\\HttpOperation\\HttpOperation.csproj": {
+                "projectPath": "C:\\Kizuna\\Git\\Learn.NetCore\\ASP.NET.Core\\HttpOperation\\HttpOperation.csproj"
               },
-              "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\PublicMethod\\PublicMethod.csproj": {
-                "projectPath": "D:\\A_zwj\\Learn.NetCore\\ASP.NET.Core\\PublicMethod\\PublicMethod.csproj"
+              "C:\\Kizuna\\Git\\Learn.NetCore\\ASP.NET.Core\\PublicMethod\\PublicMethod.csproj": {
+                "projectPath": "C:\\Kizuna\\Git\\Learn.NetCore\\ASP.NET.Core\\PublicMethod\\PublicMethod.csproj"
               }
             }
           }
@@ -184,25 +187,25 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.1.6, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.1.6, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.1.6, )"
             },
             "aliyun-net-sdk-alimt": {
               "target": "Package",
-              "version": "[1.0.3, )"
+              "version": "[1.1.1, )"
             },
             "aliyun-net-sdk-ros": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.3.1, )"
             }
           },
           "imports": [
@@ -220,7 +223,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

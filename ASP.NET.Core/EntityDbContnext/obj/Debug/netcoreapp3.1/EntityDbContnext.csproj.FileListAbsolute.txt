@@ -8,3 +8,15 @@ D:\A_zwj\Learn.NetCore\ASP.NET.Core\EntityDbContnext\bin\Debug\netcoreapp3.1\Ent
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\EntityDbContnext\obj\Debug\netcoreapp3.1\EntityDbContnext.dll
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\EntityDbContnext\obj\Debug\netcoreapp3.1\EntityDbContnext.pdb
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\EntityDbContnext\obj\Debug\netcoreapp3.1\EntityDbContnext.csprojAssemblyReference.cache
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\EntityDbContnext\bin\Debug\netcoreapp3.1\EntityDbContnext.deps.json
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\EntityDbContnext\bin\Debug\netcoreapp3.1\EntityDbContnext.runtimeconfig.json
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\EntityDbContnext\bin\Debug\netcoreapp3.1\EntityDbContnext.runtimeconfig.dev.json
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\EntityDbContnext\bin\Debug\netcoreapp3.1\EntityDbContnext.dll
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\EntityDbContnext\bin\Debug\netcoreapp3.1\EntityDbContnext.pdb
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\EntityDbContnext\obj\Debug\netcoreapp3.1\EntityDbContnext.csprojAssemblyReference.cache
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\EntityDbContnext\obj\Debug\netcoreapp3.1\EntityDbContnext.AssemblyInfoInputs.cache
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\EntityDbContnext\obj\Debug\netcoreapp3.1\EntityDbContnext.AssemblyInfo.cs
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\EntityDbContnext\obj\Debug\netcoreapp3.1\EntityDbContnext.csproj.CoreCompileInputs.cache
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\EntityDbContnext\obj\Debug\netcoreapp3.1\EntityDbContnext.dll
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\EntityDbContnext\obj\Debug\netcoreapp3.1\EntityDbContnext.pdb
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\EntityDbContnext\obj\Debug\netcoreapp3.1\EntityDbContnext.genruntimeconfig.cache

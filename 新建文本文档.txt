@@ -1,0 +1,34 @@
+
+
+password:    tB2r62SkvB99p8MiEX
+
+
+ "port": 20514,
+    "protocol": "vmess",
+    "settings": {
+      "clients": [
+        {
+          "id": "20617e92-069e-4bc7-9072-98da23b9d144",
+          "level": 1,
+          "alterId": 64
+        }
+      ]
+
+
+firewall-cmd --permanent --add-port=20514/tcp
+
+firewall-cmd --permanent --add-port=14439/tcp
+
+
+firewall-cmd --permanent --add-port=21265/tcp
+firewall-cmd --permanent --add-port=21265/udp
+
+
+
+firewall-cmd --permanent --add-forward-port=port=21265:proto=tcp:toaddr=103.118.42.169:toport=14439
+firewall-cmd --permanent --add-forward-port=port=21265:proto=udp:toaddr=103.118.42.169:toport=14439
+firewall-cmd --reload
+
+
+
+07bf5880-478a-44ab-985b-5d133463cbc7

@@ -5,7 +5,7 @@ BBR开启:
 wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 
 魔改BBR:
-wget --no-check-certificate -q0 'BBR.sh' 'https://moeclub.org/attachment/LinuxShell/BBR.sh' && chmod a+x BBR.sh && bash BBR.sh -f
+wget --no-check-certificate -qo 'BBR.sh' 'https://moeclub.org/attachment/LinuxShell/BBR.sh' && chmod a+x BBR.sh && bash BBR.sh -f
 
 yum -y install wget
 
@@ -20,6 +20,185 @@ chmod +x shadowsocksR.sh
 Your Server IP        :  35.220.160.6 
 Your Server Port      :  8388 
 Your Password         :  19971108 
+
 Your Protocol         :  auth_sha1_v4 
 Your obfs             :  plain 
 Your Encryption Method:  aes-256-cfb 
+
+Congratulations, ShadowsocksR server install completed!
+Your Server IP        :  47.243.47.187
+Your Server Port      :  8388
+Your Password         :  19971108
+Your Protocol         :  auth_sha1_v4
+Your obfs             :  plain
+Your Encryption Method:  aes-256-cfb
+
+
+实例密码 Zhaoweijie@1108
+
+Just MySocks PassWord
+	Zhaoweijie1108.
+
+
+v2ray
+config
+{
+  "inbounds": [{
+    "port": 38581,
+    "protocol": "vmess",
+    "settings": {
+      "clients": [
+        {
+          "id": "fc0ebe3d-03a9-4291-a362-7d8c97a1d23e",
+          "level": 1,
+          "alterId": 64
+        }
+      ]
+    }
+  }],
+  "outbounds": [{
+    "protocol": "freedom",
+    "settings": {}
+  },{
+    "protocol": "blackhole",
+    "settings": {},
+    "tag": "blocked"
+  }],
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "ip": ["geoip:private"],
+        "outboundTag": "blocked"
+      }
+    ]
+  }
+}
+
+# firewalld放行端口（适用于CentOS7/8）
+firewall-cmd --permanent --add-port=38581/tcp                     # 38581改成你配置文件中的端口号
+firewall-cmd --reload
+# ufw放行端口（适用于ubuntu）
+ufw allow 23581/tcp # 23581改成你的端口号
+# iptables 放行端口（适用于CentOS 6/7）
+iptables -I INPUT -p tcp --dport 23581 -j ACCEPT
+# 设置开机启动
+systemctl enable v2ray
+# 运行v2ray
+systemctl start v2ray
+
+
+
+
+I feel like I'm losing hope
+
+In my body and my soul
+
+And the sky, it looks so ominous
+
+And as time comes to a halt
+
+Silence starts to overflow
+
+My cries are inconspicuous
+
+Tell me, God, are you punishing me?
+
+Is this the price I’m paying for my past mistakes?
+
+This is my redemption song
+
+I need you more than ever right now
+
+Can you hear me now?
+
+‘Cause we’re gonna shout it loud
+
+Even if our words seem meaningless
+
+It’s like I’m carrying the weight of the world
+
+I wish that someway, somehow
+
+That I can save everyone of us
+
+But the truth is that I’m only one girl
+
+Maybe if I keep believing my dreams will come to life
+
+Come to life…
+
+After all the laughter fades
+
+Signs of life all washed away
+
+I can still, still feel a gentle breeze
+
+No matter how hard I pray
+
+Signs of warning still remain
+
+And life has become my enemy
+
+Tell me, God, are you punishing me?
+
+Is this the price I’m paying for my past mistakes?
+
+This is my redemption song
+
+I need you more than ever right now
+
+Can you hear me now?
+
+‘Cause we’re gonna shout it loud
+
+Even if our words seem meaningless
+
+It’s like I’m carrying the weight of the world
+
+I wish that someway, somehow
+
+That I can save everyone of us
+
+But the truth is that I’m only one girl
+
+Maybe if I keep believing my dreams will come to life
+
+Come to life…
+
+‘Cause we’re gonna shout it loud
+
+Even if our words seem meaningless
+
+It’s like I’m carrying the weight of the world
+
+I wish that someway, somehow
+
+That I can save everyone of us
+
+But the truth is that I’m only one girl
+
+Still, we’re gonna shout it loud
+
+Even if our words seem meaningless
+
+It’s like I’m carrying the weight of the world
+
+I hope that someway, somehow
+
+That I can save everyone of us
+
+But the truth is that I’m only one girl
+
+Maybe if I keep believing my dreams will come to life
+
+Come to life…
+
+
+
+port:36229
+iptables -I INPUT -p tcp --dport 36229 -j ACCEPT
+
+firewall-cmd --permanent --add-port=22725/tcp
+
+

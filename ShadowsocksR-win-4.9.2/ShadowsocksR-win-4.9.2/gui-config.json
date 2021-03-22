@@ -1,0 +1,61 @@
+{
+	"configs" : [
+		{
+			"remarks" : "",
+			"id" : "B736CDF873A6265DFBD1505E32936153",
+			"server" : "47.243.47.187",
+			"server_port" : 8388,
+			"server_udp_port" : 0,
+			"password" : "19971108",
+			"method" : "aes-256-cfb",
+			"protocol" : "auth_sha1_v4",
+			"protocolparam" : "",
+			"obfs" : "plain",
+			"obfsparam" : "",
+			"remarks_base64" : "",
+			"group" : "zhaoweijie",
+			"enable" : true,
+			"udp_over_tcp" : false
+		}
+	],
+	"index" : 0,
+	"random" : true,
+	"sysProxyMode" : 3,
+	"shareOverLan" : false,
+	"localPort" : 1080,
+	"localAuthPassword" : "eUUEfdsgF5aAJhWDiYZG",
+	"localDnsServer" : "",
+	"dnsServer" : "",
+	"reconnectTimes" : 2,
+	"balanceAlgorithm" : "LowException",
+	"randomInGroup" : false,
+	"TTL" : 0,
+	"connectTimeout" : 5,
+	"proxyRuleMode" : 2,
+	"proxyEnable" : false,
+	"pacDirectGoProxy" : false,
+	"proxyType" : 0,
+	"proxyHost" : null,
+	"proxyPort" : 0,
+	"proxyAuthUser" : null,
+	"proxyAuthPass" : null,
+	"proxyUserAgent" : null,
+	"authUser" : null,
+	"authPass" : null,
+	"autoBan" : false,
+	"checkSwitchAutoCloseAll" : false,
+	"logEnable" : false,
+	"sameHostForSameTarget" : false,
+	"keepVisitTime" : 180,
+	"isHideTips" : true,
+	"nodeFeedAutoUpdate" : true,
+	"serverSubscribes" : [
+
+	],
+	"token" : {
+
+	},
+	"portMap" : {
+
+	}
+}

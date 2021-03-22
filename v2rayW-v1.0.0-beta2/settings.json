@@ -1,0 +1,211 @@
+{
+  "appStatus": {
+    "proxyState": false,
+    "proxyMode": 0,
+    "selectedServerIndex": 1,
+    "selectedCusConfig": "",
+    "selectedRoutingSet": 2,
+    "useMultipleServer": false,
+    "useCusProfile": false
+  },
+  "selectedPacFileName": "pac.js",
+  "logLevel": "none",
+  "localPort": 1081,
+  "httpPort": 8001,
+  "udpSupport": false,
+  "shareOverLan": false,
+  "dnsString": "localhost",
+  "enableRestore": false,
+  "profiles": [
+    {
+      "sendThrough": "0.0.0.0",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "zjctcucm.nat.coalcloud.xyz",
+            "users": [
+              {
+                "id": "07bf5880-478a-44ab-985b-5d133463cbc7",
+                "alterId": 64,
+                "security": "auto",
+                "level": 0
+              }
+            ],
+            "port": 21265
+          }
+        ]
+      },
+      "tag": "tokyo",
+      "streamSettings": {
+        "wsSettings": {
+          "path": "",
+          "headers": {}
+        },
+        "quicSettings": {
+          "key": "key",
+          "security": "none",
+          "header": {
+            "type": "none"
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "server.cc",
+          "allowInsecureCiphers": false
+        },
+        "httpSettings": {
+          "path": ""
+        },
+        "kcpSettings": {
+          "header": {
+            "type": "none"
+          },
+          "mtu": 1350,
+          "congestion": false,
+          "tti": 50,
+          "uplinkCapacity": 5,
+          "writeBufferSize": 2,
+          "readBufferSize": 2,
+          "downlinkCapacity": 20
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "none",
+        "network": "tcp",
+        "sockopt": {}
+      }
+    },
+    {
+      "sendThrough": "0.0.0.0",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "zjctcucm.nat.coalcloud.xyz",
+            "users": [
+              {
+                "id": "20617e92-069e-4bc7-9072-98da23b9d144",
+                "alterId": 64,
+                "security": "auto",
+                "level": 0
+              }
+            ],
+            "port": 21264
+          }
+        ]
+      },
+      "tag": "hk",
+      "streamSettings": {
+        "wsSettings": {
+          "path": "",
+          "headers": {}
+        },
+        "quicSettings": {
+          "key": "key",
+          "security": "none",
+          "header": {
+            "type": "none"
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "server.cc",
+          "allowInsecureCiphers": false
+        },
+        "httpSettings": {
+          "path": ""
+        },
+        "kcpSettings": {
+          "header": {
+            "type": "none"
+          },
+          "mtu": 1350,
+          "congestion": false,
+          "tti": 50,
+          "uplinkCapacity": 5,
+          "writeBufferSize": 2,
+          "readBufferSize": 2,
+          "downlinkCapacity": 20
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "none",
+        "network": "tcp",
+        "sockopt": {}
+      }
+    }
+  ],
+  "subscriptions": [],
+  "routingRuleSets": [
+    {
+      "name": "全部使用主服务器",
+      "domainStrategy": "AsIs",
+      "rules": [
+        {
+          "type": "field",
+          "port": "0-65535",
+          "outboundTag": "main"
+        }
+      ]
+    },
+    {
+      "name": "全部直连",
+      "domainStrategy": "AsIs",
+      "rules": [
+        {
+          "type": "field",
+          "port": "0-65535",
+          "outboundTag": "direct"
+        }
+      ]
+    },
+    {
+      "name": "绕过本地和CN地址",
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "type": "field",
+          "outboundTag": "direct",
+          "domain": [
+            "localhost",
+            "geosite:cn"
+          ]
+        },
+        {
+          "type": "field",
+          "outboundTag": "direct",
+          "ip": [
+            "geoip:private",
+            "geoip:cn"
+          ]
+        },
+        {
+          "type": "field",
+          "outboundTag": "main",
+          "port": "0-65535"
+        }
+      ]
+    }
+  ]
+}

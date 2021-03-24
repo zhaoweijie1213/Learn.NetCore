@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "HttpOperation/1.0.0": {
         "dependencies": {
+          "LazopSdk": "2.0.0.1",
           "aliyun-net-sdk-ros": "3.1.0"
         },
         "runtime": {
@@ -31,6 +32,14 @@
           "lib/netstandard2.0/aliyun-net-sdk-ros.dll": {
             "assemblyVersion": "3.1.0.0",
             "fileVersion": "3.1.0.0"
+          }
+        }
+      },
+      "LazopSdk/2.0.0.1": {
+        "runtime": {
+          "lib/LazopSdk.dll": {
+            "assemblyVersion": "2.0.0.1",
+            "fileVersion": "2.0.0.1"
           }
         }
       },
@@ -63,6 +72,13 @@
       "sha512": "sha512-qq4NvY2LhhAh+gYxjJELn7qEPQUR4AJO+Rh3Au7PmbqJkuC1T9lQJB9H78Ab27MB1+3h4BbXmluijAZ65Y70rQ==",
       "path": "aliyun-net-sdk-ros/3.1.0",
       "hashPath": "aliyun-net-sdk-ros.3.1.0.nupkg.sha512"
+    },
+    "LazopSdk/2.0.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GAl923cnwItZ82Y8I1DPUg5M/CusUpEMOvtYXH04bGt7JaxSN2qcAWF4uiUg+HcVoPf2OpxwGLcrqQLM6QmSVw==",
+      "path": "lazopsdk/2.0.0.1",
+      "hashPath": "lazopsdk.2.0.0.1.nupkg.sha512"
     },
     "Newtonsoft.Json/3.5.8": {
       "type": "package",

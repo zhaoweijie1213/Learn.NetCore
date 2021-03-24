@@ -6,3 +6,12 @@ D:\A_zwj\Learn.NetCore\ASP.NET.Core\PublicMethod\obj\Debug\netcoreapp3.1\PublicM
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\PublicMethod\obj\Debug\netcoreapp3.1\PublicMethod.dll
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\PublicMethod\obj\Debug\netcoreapp3.1\PublicMethod.pdb
 D:\A_zwj\Learn.NetCore\ASP.NET.Core\PublicMethod\obj\Debug\netcoreapp3.1\PublicMethod.csprojAssemblyReference.cache
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\PublicMethod\bin\Debug\netcoreapp3.1\PublicMethod.deps.json
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\PublicMethod\bin\Debug\netcoreapp3.1\PublicMethod.dll
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\PublicMethod\bin\Debug\netcoreapp3.1\PublicMethod.pdb
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\PublicMethod\obj\Debug\netcoreapp3.1\PublicMethod.csprojAssemblyReference.cache
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\PublicMethod\obj\Debug\netcoreapp3.1\PublicMethod.AssemblyInfoInputs.cache
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\PublicMethod\obj\Debug\netcoreapp3.1\PublicMethod.AssemblyInfo.cs
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\PublicMethod\obj\Debug\netcoreapp3.1\PublicMethod.csproj.CoreCompileInputs.cache
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\PublicMethod\obj\Debug\netcoreapp3.1\PublicMethod.dll
+C:\Kizuna\Git\Learn.NetCore\ASP.NET.Core\PublicMethod\obj\Debug\netcoreapp3.1\PublicMethod.pdb

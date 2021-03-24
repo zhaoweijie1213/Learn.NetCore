@@ -51,15 +51,5 @@
             <param name="app"></param>
             <param name="env"></param>
         </member>
-        <member name="T:LeetCodeWeb.View.IndexModel">
-            <summary>
-            首页
-            </summary>
-        </member>
-        <member name="M:LeetCodeWeb.View.IndexModel.OnGet">
-            <summary>
-            
-            </summary>
-        </member>
     </members>
 </doc>

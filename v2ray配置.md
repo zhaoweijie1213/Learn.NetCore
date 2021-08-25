@@ -70,3 +70,13 @@ systemctl start v2ray
 到此，服务端应该配置好了。如果服务器商层面还有防火墙（阿里云/Google/AWS购买的vps），请登录网页后台，放行v2ray的端口。
 
 接下来介绍v2ray客户端的配置和使用。
+
+
+
+
+
+主机账号
+
+root
+
+N1YFz7oO9I5Rdpj47q

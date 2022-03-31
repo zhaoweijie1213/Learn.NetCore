@@ -2,7 +2,7 @@
 
 
 
-##### 先移除掉exited状态的容器 ,然后删除dangling 状态的镜像
+##### 先移除掉exited状态的容器 ,然后删除dangling状态的镜像(悬虚镜像)
 
 ```shell
 docker rm $(docker ps -q -f status=exited)

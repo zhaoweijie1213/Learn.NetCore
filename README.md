@@ -1,10 +1,14 @@
 # Learn.NetCore
 
-LeetCode：算法刷题中
+> LeetCode：算法刷题中
 
-command激活windows10
 
+
+###### Command激活windows10命令
+
+```
 slmgr.vbs /ato
+```
 
 [Docker命令](Docker命令.md ':include')
 

@@ -48,3 +48,17 @@ docker rmi `docker images -q | awk '/^<none>/ { print $3 }'`
 docker rmi --force `docker images | grep doss-api | awk '{print $3}'`    //其中doss-api为关键字
 ```
 
+##### 清理镜像
+
+我们在使用 Docker 一段时间后，系统一般都会残存一些临时的、没有被使用的镜像文件，可以通过以下命令进行清理
+
+```shell
+docker image prune
+```
+
+它支持的子命令有：
+
+- `-a, --all`: 删除所有没有用的镜像，而不仅仅是临时文件；
+- `-f, --force`：强制删除镜像文件，无需弹出提示确认；
+
+另外，执行完 `docker image prune` 命令后，还是告诉我们释放了多少存储空间！

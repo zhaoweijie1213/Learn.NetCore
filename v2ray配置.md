@@ -60,10 +60,16 @@ systemctl start v2ray
 
 主机账号
 
+```
+#hk
 root
-
 N1YFz7oO9I5Rdpj47q
 
 root
-
 3q1LuWgj2IQ9Tb5Kh1
+
+#us
+root
+5R1jNbz5SxA4g6MTx0
+```
+

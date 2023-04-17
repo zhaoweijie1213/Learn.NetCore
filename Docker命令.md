@@ -39,7 +39,7 @@ docker rmi `docker images -q`
 ###### 没有打标签
 
 ```shell
-docker rmi `docker images -q | awk '/^<none>/ { print $3 }'`
+docker rmi "`docker images -q | awk '/^<none>/ { print $3 }'`"
 ```
 
 ###### 镜像名包含关键字

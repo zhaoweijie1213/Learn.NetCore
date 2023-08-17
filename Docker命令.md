@@ -62,3 +62,10 @@ docker image prune
 - `-f, --force`：强制删除镜像文件，无需弹出提示确认；
 
 另外，执行完 `docker image prune` 命令后，还是告诉我们释放了多少存储空间！
+
+##### 删除所有Tag是v开头的镜像
+
+```shell
+docker images --format "{{.Repository}}:{{.Tag}}" | grep ":v" | awk '{system("docker rmi "$1)}'
+```
+

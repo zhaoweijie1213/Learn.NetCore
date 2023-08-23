@@ -63,7 +63,7 @@ systemctl start v2ray
 ```
 #hk
 root
-tpc6B64mYqtL4P1V3U
+RkcQ3771uhXlO0SU0h
 
 #us
 root

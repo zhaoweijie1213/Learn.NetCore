@@ -69,6 +69,24 @@ docker image prune
 docker images --format "{{.Repository}}:{{.Tag}}" | grep ":v" | awk '{system("docker rmi "$1)}'
 ```
 
+##### 要启动所有已停止的容器，你可以使用以下步骤：
+
+1. 使用以下命令列出所有已停止的容器的ID：
+
+```
+bashCopy code
+docker ps -a -q --filter "status=exited"
+```
+
+1. 使用 `docker start` 命令结合上述命令启动所有已停止的容器：
+
+```
+bashCopy code
+docker start $(docker ps -a -q --filter "status=exited")
+```
+
+
+
 # 清理docker
 
 Docker 的容器、镜像、卷和网络可能会占用大量的磁盘空间。为了清理不再需要的 Docker 资源并释放磁盘空间，你可以使用以下命令：

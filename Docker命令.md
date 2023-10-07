@@ -69,3 +69,59 @@ docker image prune
 docker images --format "{{.Repository}}:{{.Tag}}" | grep ":v" | awk '{system("docker rmi "$1)}'
 ```
 
+# 清理docker
+
+Docker 的容器、镜像、卷和网络可能会占用大量的磁盘空间。为了清理不再需要的 Docker 资源并释放磁盘空间，你可以使用以下命令：
+
+1. **清理停止的容器**：
+
+   ```
+   bashCopy code
+   docker container prune
+   ```
+
+2. **清理未使用的镜像**：
+
+   - 删除悬挂的镜像（即未被任何容器使用的镜像）：
+
+     ```
+     bashCopy code
+     docker image prune
+     ```
+
+   - 删除所有未被任何容器使用的镜像：
+
+     ```
+     bashCopy code
+     docker image prune -a
+     ```
+
+3. **清理未使用的卷**：
+
+   ```
+   bashCopy code
+   docker volume prune
+   ```
+
+4. **清理未使用的网络**：
+
+   ```
+   bashCopy code
+   docker network prune
+   ```
+
+5. **一次性清理停止的容器、未使用的网络、悬挂的镜像和未使用的卷**：
+
+   ```
+   bashCopy code
+   docker system prune
+   ```
+
+   如果你也想删除所有未被容器使用的镜像（而不仅仅是悬挂的镜像），可以添加 `-a` 选项：
+
+   ```
+   bashCopy code
+   docker system prune -a
+   ```
+
+**注意**：在使用上述命令之前，请确保你确实不再需要这些资源，因为这些操作是不可逆的。特别是当你清理镜像或卷时，重新获取或创建它们可能需要一些时间。

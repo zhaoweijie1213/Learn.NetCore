@@ -74,14 +74,12 @@ docker images --format "{{.Repository}}:{{.Tag}}" | grep ":v" | awk '{system("do
 1. 使用以下命令列出所有已停止的容器的ID：
 
 ```
-bashCopy code
 docker ps -a -q --filter "status=exited"
 ```
 
 1. 使用 `docker start` 命令结合上述命令启动所有已停止的容器：
 
 ```
-bashCopy code
 docker start $(docker ps -a -q --filter "status=exited")
 ```
 

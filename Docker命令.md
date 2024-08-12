@@ -85,7 +85,7 @@ docker start $(docker ps -a -q --filter "status=exited")
 
 
 
-# 清理docker
+### 清理docker
 
 Docker 的容器、镜像、卷和网络可能会占用大量的磁盘空间。为了清理不再需要的 Docker 资源并释放磁盘空间，你可以使用以下命令：
 
@@ -134,3 +134,82 @@ Docker 的容器、镜像、卷和网络可能会占用大量的磁盘空间。�
    ```
 
 **注意**：在使用上述命令之前，请确保你确实不再需要这些资源，因为这些操作是不可逆的。特别是当你清理镜像或卷时，重新获取或创建它们可能需要一些时间。
+
+# Docker Swarm
+
+容器编排
+
+
+
+# Kubernetes
+
+### 安装minikube(学习环境，非生产环境)
+
+```
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
+```
+
+### 在Dokcer安装并运行kubernetes
+
+```
+ minikube start --force --driver=docker
+```
+
+###  Curl 在 Linux 系统中安装 kubectl
+
+```
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+```
+
+### 安装 kubectl
+
+```
+sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+```
+
+### 查看版本的详细信息
+
+```
+kubectl version --client --output=yaml
+```
+
+### 运行Nginx（测试）
+
+```shell
+kubectl run ngx --image=nginx:alpine
+```
+
+### 查看kubectl的文档
+
+```shell
+kubectl explain pod
+```
+
+# jenkins
+
+## 部署
+
+```shell
+docker run -u root -d --privileged -p 8080:8080 -p 50000:50000 --restart=always -v /data/jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock -v /etc/ssl/certs:/usr/local/share/ca-certificates:ro --name jenkins jenkins/jenkins:lts-jdk17
+```
+
+## 进入jenkins容器
+
+```
+docker exec -it -u root jenkins bash
+```
+
+## 在容器内安装Docker CLI（Debian/Ubuntu系统）：
+
+```shell
+apt-get update
+apt-get install -y docker.io
+```
+
+## 更新证书(先进入jenkins容器)
+
+```
+update-ca-certificates 
+```
+

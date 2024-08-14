@@ -213,3 +213,15 @@ apt-get install -y docker.io
 update-ca-certificates 
 ```
 
+## 解决dotnet构建错误
+
+> jenkins安装.net sdk插件后运行dotnet命令后报错
+>
+> Process terminated. Couldn't find a valid ICU package installed on the system. Please install libicu (or icu-libs) using your package manager and try again. Alternatively you can set the configuration flag System.Globalization.Invariant to true if you want to run with no globalization support. Please see https://aka.ms/dotnet-missing-libicu for more information.
+
+```shell
+export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
+dotnet nuget add source http://192.168.0.252/v3/index.json -n queyouquan
+dotnet nuget list source
+```
+

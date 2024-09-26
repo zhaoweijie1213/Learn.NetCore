@@ -1,0 +1,17 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /usr/share/filebeat/target/*/*.log
+    scan_frequency: 10s
+    processors:
+      - dissect:
+          tokenizer: "/usr/share/filebeat/target/%{project}/%{filename}"
+          field: "source"
+          target_prefix: ""
+      - drop_fields:
+          fields: ["filename"]
+    fields_under_root: true
+
+output.logstash:
+  hosts: ["logstash:5044"]

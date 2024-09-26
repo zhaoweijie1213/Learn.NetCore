@@ -1,0 +1,8 @@
+http.host: "0.0.0.0"
+xpack.monitoring.enabled: true
+xpack.monitoring.elasticsearch:
+  hosts: [ "https://elasticsearch:9200" ]
+  username: "elastic"
+  password: "您的_elastic_用户密码"
+  ssl:
+    ca: "/usr/share/logstash/config/certs/http_ca.crt"

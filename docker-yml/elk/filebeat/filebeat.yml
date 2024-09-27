@@ -1,17 +1,24 @@
+filebeat.config:
+  modules:
+    path: ${path.config}/modules.d/*.yml
+    reload.enabled: false
+
 filebeat.inputs:
-  - type: log
-    enabled: true
-    paths:
-      - /usr/share/filebeat/target/*/*.log
-    scan_frequency: 10s
-    processors:
-      - dissect:
-          tokenizer: "/usr/share/filebeat/target/%{project}/%{filename}"
-          field: "source"
-          target_prefix: ""
-      - drop_fields:
-          fields: ["filename"]
-    fields_under_root: true
+- type: log
+  # 使用通配符匹配所有项目的 JSON 日志文件路径
+  paths:
+    - /usr/share/filebeat/target/*/logs/*.json
+  # 解析 JSON 格式的日志
+  json.keys_under_root: true
+  json.add_error_key: true
+  # 添加处理器以提取项目名称
+  processors:
+    # 使用 grok 处理器从 'source' 字段提取 'project_name'
+    - grok:
+        match:
+          source: "/usr/share/filebeat/target/%{WORD:project_name}/logs/%{GREEDYDATA:file_name}.json"
+    - drop_fields:
+        fields: ["file_name"]
 
 output.logstash:
   hosts: ["logstash:5044"]

@@ -1,0 +1,59 @@
+Elasticsearch security features have been automatically configured!
+✅ Authentication is enabled and cluster connections are encrypted.
+
+ℹ️  Password for the elastic user (reset with `bin/elasticsearch-reset-password -u elastic`):
+  zP=AcbShvNoOo7LgRA6U
+
+ℹ️  HTTP CA certificate SHA-256 fingerprint:
+  4a4ab7feed4e542f9c2e17a98fb730d1e01a612761cbe4134690cca7934c42c3
+
+ℹ️  Configure Kibana to use this cluster:
+• Run Kibana and click the configuration link in the terminal when Kibana starts.
+• Copy the following enrollment token and paste it into Kibana in your browser (valid for the next 30 minutes):
+  eyJ2ZXIiOiI4LjE0LjAiLCJhZHIiOlsiMTcyLjI2LjAuMjo5MjAwIl0sImZnciI6IjRhNGFiN2ZlZWQ0ZTU0MmY5YzJlMTdhOThmYjczMGQxZTAxYTYxMjc2MWNiZTQxMzQ2OTBjY2E3OTM0YzQyYzMiLCJrZXkiOiJWMTBBTFpJQk1TUzYwVFl2Y1lTTzp1YTVTNWJSUFJUYVJrVWhPU3pGY1BRIn0=
+
+ℹ️ Configure other nodes to join this cluster:
+• Copy the following enrollment token and start new Elasticsearch nodes with `bin/elasticsearch --enrollment-token <token>` (valid for the next 30 minutes):
+  eyJ2ZXIiOiI4LjE0LjAiLCJhZHIiOlsiMTcyLjI2LjAuMjo5MjAwIl0sImZnciI6IjRhNGFiN2ZlZWQ0ZTU0MmY5YzJlMTdhOThmYjczMGQxZTAxYTYxMjc2MWNiZTQxMzQ2OTBjY2E3OTM0YzQyYzMiLCJrZXkiOiJXVjBBTFpJQk1TUzYwVFl2Y1lTbjpVOEk4QTN6TVFJLWp2ZmRIaTRUZ2dRIn0=
+
+  If you're running in Docker, copy the enrollment token and run:
+  `docker run -e "ENROLLMENT_TOKEN=<token>" docker.elastic.co/elasticsearch/elasticsearch:8.15.1`
+  
+  
+  docker run -it \
+	-d \
+	--restart=always \
+	--log-driver json-file \
+	--log-opt max-size=100m \
+	--log-opt max-file=2 \
+	--name kibana \
+	-p 5601:5601 \
+	--net elastic \
+	kibana:8.15.1
+	
+	
+	sudo chown -R 1000:1000 /data/filebeat/data
+	
+获取logstash-api-key
+curl -u elastic:zP=AcbShvNoOo7LgRA6U -X POST "http://localhost:9200/_security/service/elastic/kibana/api_key" -H "Content-Type: application/json" -d'
+{
+  "name": "logstash-api-key",
+  "expiration": "1d",
+  "role_descriptors": {}
+}
+'
+
+
+POST /_security/user/logstash_user
+{
+  "password" : "123456",
+  "roles" : [ "logstash_writer" ],
+  "full_name" : "Logstash User",
+  "email" : "logstash@example.com"
+}
+
+
+docker-compose -f docker-compose.elasticsearch.yml -f docker-compose.kibana.yml -f docker-compose.logstash.yml -f docker-compose.filebeat.yml up -d
+docker-compose -f docker-compose.logstash.yml up -d
+
+docker-compose -f docker-compose.filebeat.yml up -d

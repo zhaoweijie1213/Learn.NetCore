@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+    logstash:
+        image: logstash:8.15.1
+        container_name: logstash
+        volumes:
+            - /data/logstash/config:/usr/share/logstash/config
+            - /data/logstash/pipeline:/usr/share/logstash/pipeline
+        ports:
+            - 5044:5044
+            - 9600:9600
+        depends_on:
+            - elasticsearch
+        networks:
+            - elastic
+
+networks:
+    elastic:
+        driver: bridge

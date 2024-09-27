@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+    filebeat:
+        image: elastic/filebeat:8.15.1
+        container_name: filebeat
+        restart: always
+        tty: true
+        stdin_open: true
+        network_mode: host
+        volumes:
+            - /data/filebeat/filebeat.yml:/usr/share/filebeat/filebeat.yml
+            - /data/qyqweb:/usr/share/filebeat/target
+            - /data/filebeat/data:/usr/share/filebeat/data
+            - /data/filebeat/logs:/usr/share/filebeat/logs
+        command: ['filebeat', '-e', '-c', '/usr/share/filebeat/filebeat.yml']
+        depends_on:
+            - logstash

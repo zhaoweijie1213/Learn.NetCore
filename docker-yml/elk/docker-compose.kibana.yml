@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+    kibana:
+        image: kibana:8.15.1
+        container_name: kibana
+        restart: always
+        tty: true
+        stdin_open: true
+        logging:
+            driver: 'json-file'
+            options:
+                max-size: '100m'
+                max-file: '2'
+        ports:
+            - '5601:5601'
+        networks:
+            - elastic
+        depends_on:
+            - elasticsearch
+        volumes:
+            - /data/kibana/config:/usr/share/kibana/config
+            - /data/kibana/data:/usr/share/kibana/data
+            - /data/kibana/plugins:/usr/share/kibana/plugins
+            - /data/kibana/logs:/usr/share/kibana/logs
+
+networks:
+    elastic:
+        driver: bridge

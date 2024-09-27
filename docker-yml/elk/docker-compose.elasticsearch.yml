@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+    elasticsearch:
+        image: elasticsearch:8.15.1
+        container_name: elasticsearch
+        environment:
+            - discovery.type=single-node
+            - ES_JAVA_OPTS=-Xms1g -Xmx1g
+            - LANG=C.UTF-8
+            - LC_ALL=C.UTF-8
+        volumes:
+            - /data/elasticsearch/config:/usr/share/elasticsearch/config
+            - /data/elasticsearch/data:/usr/share/elasticsearch/data
+            - /data/elasticsearch/plugins:/usr/share/elasticsearch/plugins
+            - /data/elasticsearch/logs:/usr/share/elasticsearch/logs
+        ports:
+            - 9200:9200
+            - 9300:9300
+        networks:
+            elastic:
+                aliases:
+                    - elasticsearch
+
+networks:
+    elastic:
+        driver: bridge

@@ -54,6 +54,7 @@ POST /_security/user/logstash_user
 
 
 docker-compose -f docker-compose.elasticsearch.yml -f docker-compose.kibana.yml -f docker-compose.logstash.yml -f docker-compose.filebeat.yml up -d
-docker-compose -f docker-compose.logstash.yml up -d
+docker-compose -f docker-compose.logstash.yml restart
 
-docker-compose -f docker-compose.filebeat.yml up -d
+
+docker-compose -f docker-compose.filebeat.yml restart

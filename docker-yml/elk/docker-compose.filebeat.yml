@@ -7,7 +7,6 @@ services:
         restart: always
         tty: true
         stdin_open: true
-        network_mode: host
         volumes:
             - /data/filebeat/filebeat.yml:/usr/share/filebeat/filebeat.yml
             - /data/qyqweb:/usr/share/filebeat/target
@@ -16,3 +15,9 @@ services:
         command: ['filebeat', '-e', '-c', '/usr/share/filebeat/filebeat.yml']
         depends_on:
             - logstash
+        networks:
+            - elastic
+
+networks:
+    elastic:
+        driver: bridge

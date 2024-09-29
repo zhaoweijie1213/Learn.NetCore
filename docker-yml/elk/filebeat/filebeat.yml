@@ -2,6 +2,10 @@ filebeat.config:
   modules:
     path: ${path.config}/modules.d/*.yml
     reload.enabled: false
+    scan_frequency: 1s  # 每秒扫描一次新日志
+    multiline.pattern: '^\{'
+    multiline.negate: true
+    multiline.match: after
 
 filebeat.inputs:
 - type: log
@@ -10,13 +14,15 @@ filebeat.inputs:
     - /usr/share/filebeat/target/*/logs/*.json
   # 解析 JSON 格式的日志
   json.keys_under_root: true
+  json.overwrite_keys: true
   json.add_error_key: true
+  json.expand_keys: true
   # 添加处理器以提取项目名称
   processors:
     # 使用 grok 处理器从 'source' 字段提取 'project_name'
-    - grok:
-        match:
-          source: "/usr/share/filebeat/target/%{WORD:project_name}/logs/%{GREEDYDATA:file_name}.json"
+    - dissect:
+        tokenizer: "/usr/share/filebeat/target/%{project_name}/logs/%{file_name}.json"
+        field: "log.file.path"
     - drop_fields:
         fields: ["file_name"]
 

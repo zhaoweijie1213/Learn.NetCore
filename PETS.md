@@ -2,7 +2,7 @@
 
 ## 第一关
 
-1. [**one**](https://dictionary.cambridge.org/dictionary/english-chinese-simplified/one)
+1. ### [one](https://dictionary.cambridge.org/dictionary/english-chinese-simplified/one)
 
 ​	**number**, **determiner**
 
@@ -19,13 +19,25 @@
 
 # 计算机
 
-1. [**artificial intelligence**](https://dictionary.cambridge.org/dictionary/english-chinese-simplified/artificial-intelligence#google_vignette)
+1. ### [artificial intelligence](https://dictionary.cambridge.org/dictionary/english-chinese-simplified/artificial-intelligence#google_vignette)
 
-中文释义：
+*中文释义*：
 
 ​	人工智能
 
-英文释义：
+*英文释义*：
 
 	the study of how to produce machines that have some of the qualities that the human mind has, such as the ability to understand language, recognize pictures, solve problems, and learn
+
+2. ### [embed](https://dictionary.cambridge.org/dictionary/english-chinese-simplified/embed)
+
+*中文释义*：
+
+[把](https://dictionary.cambridge.org/dictionary/chinese-simplified-english/)…牢牢嵌入（或插入、埋入）
+
+*英文释义*：
+
+```
+to fix something firmly into a substance
+```
 

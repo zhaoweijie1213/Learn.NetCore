@@ -1,0 +1,31 @@
+# 基础镜像，使用官方 .NET 8.0 SDK
+FROM mcr.microsoft.com/dotnet/sdk:8.0
+
+# 设置工作目录
+WORKDIR /app
+
+# 设置时区为 Asia/Shanghai
+ENV TZ=Asia/Shanghai
+RUN apt-get update && \
+    apt-get install -y tzdata && \
+    ln -fs /usr/share/zoneinfo/$TZ /etc/localtime && \
+    echo $TZ > /etc/timezone && \
+    dpkg-reconfigure -f noninteractive tzdata && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# 安装公司自签证书
+# ✅ server_252.crt 文件放到构建上下文中
+COPY server_252.crt /usr/local/share/ca-certificates/server_252.crt
+RUN chmod 644 /usr/local/share/ca-certificates/server_252.crt && \
+    update-ca-certificates
+
+# ✅ 可选：预配置公司 NuGet 私有源（如果需要账号密码，记得传入 ARG）
+# ARG NUGET_USERNAME
+# ARG NUGET_PASSWORD
+# RUN dotnet nuget add source "https://192.168.0.252/v3/index.json" --name "CompanyFeed" --store-password-in-clear-text --username "$NUGET_USERNAME" --password "$NUGET_PASSWORD"
+RUN dotnet nuget add source https://192.168.0.252/v3/index.json -n queyouquan
+
+# ✅ 可选：预装常用工具，便于后续调试
+RUN apt-get update && \
+    apt-get install -y git curl && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*

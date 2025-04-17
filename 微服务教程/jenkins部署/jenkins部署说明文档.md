@@ -16,7 +16,7 @@ docker run -u root -d \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v /etc/ssl/certs:/usr/local/share/ca-certificates:ro \
   --name jenkins \
-  jenkins/jenkins:lts-jdk17
+  jenkins/jenkins:lts-jdk21
 ```
 
 ### 参数说明：

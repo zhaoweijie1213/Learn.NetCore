@@ -1,0 +1,3 @@
+cd /data/yml/common-images
+docker build -f Dockerfile-80 -t qyq/dotnet-sdk:8.0 .
+docker build -f Dockerfile-90 -t qyq/dotnet-sdk:9.0 .

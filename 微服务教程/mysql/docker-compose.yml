@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mysql:
+    container_name: mysql
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 77oNvA44zvzY5GC4B1Et
+      MYSQL_DATABASE: acg_supply
+      MYSQL_USER: user_acg_supply
+      MYSQL_PASSWORD: DN8k4WjNujwPNGJn6j2X
+    volumes:
+      - /home/docker/mysql/data:/var/lib/mysql
+    ports:
+      - "3306:3306"

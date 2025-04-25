@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  jenkins:
+    container_name: jenkins
+    image: jenkins/jenkins:lts
+    user: 0:0
+    privileged: true
+    environment:
+      - TZ=Asia/Shanghai
+    #ports:
+    #  - 8080:8080
+    #   jnlp
+    #  - 50000:50000
+    volumes:
+      - /docker/jenkins_home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+    network_mode: host
+    restart: always

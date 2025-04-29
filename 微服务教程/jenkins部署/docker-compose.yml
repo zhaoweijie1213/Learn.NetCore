@@ -14,5 +14,8 @@ services:
     volumes:
       - /docker/jenkins_home:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
+        # docker程序
+      - /usr/bin/docker:/usr/bin/docker
+      - /usr/libexec/docker/cli-plugins:/usr/libexec/docker/cli-plugins
     network_mode: host
     restart: always

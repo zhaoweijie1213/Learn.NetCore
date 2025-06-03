@@ -32,5 +32,17 @@ server {
         # Jenkins 兼容性建议
         proxy_http_version 1.1;
         proxy_request_buffering off;
+
+        # 开启图片压缩（对后端传输图片时启用）
+		gzip_proxied any;
+		gzip_types image/jpeg image/png image/gif image/webp;
+		gzip_min_length 1000;
+		
+		# 大文件优化
+		proxy_buffering on;
+		proxy_buffers 16 64k;
+		proxy_buffer_size 128k;
+		# 根据需要调节上传图片大小限制
+		client_max_body_size 50M;
     }
 }

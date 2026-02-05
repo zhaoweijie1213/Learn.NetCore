@@ -283,3 +283,17 @@ EXPLAIN SELECT id, name FROM users WHERE age > 20 ORDER BY create_time DESC LIMI
 - ✅ 实战案例：比如 分页优化、大表拆分、读写分离等场景讲解
 
 要不要一起整合一下？这样你项目上线前可以直接做一轮完整性能自检！🔍
+
+# 更改排序规则语句
+
+```sql
+SELECT
+  CONCAT(
+    'ALTER TABLE `', TABLE_NAME,
+    '` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;'
+  ) AS sql_text
+FROM information_schema.TABLES
+WHERE TABLE_SCHEMA = DATABASE()
+  AND TABLE_COLLATION <> 'utf8mb4_0900_ai_ci';
+```
+

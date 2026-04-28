@@ -258,3 +258,11 @@ fi
 | Buildx 支持      | 通过宿主挂载插件目录              |
 | 根证书更新       | `update-ca-certificates` 自动完成 |
 | Compose 一键部署 | 支持 `buildx build --load/--push` |
+
+## 清理jenkins
+
+```bash
+rm -rf /data/jenkins_home/workspace/*
+rm -rf /data/jenkins_home/jobs/*/builds/*
+```
+

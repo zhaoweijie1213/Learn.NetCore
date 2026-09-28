@@ -1,21 +1,23 @@
-version: '3.8'
 services:
   jenkins:
     container_name: jenkins
     image: jenkins/jenkins:lts
+    entrypoint: ["/bin/sh", "-c", "update-ca-certificates && exec /usr/bin/tini -- /usr/local/bin/jenkins.sh"]
     user: 0:0
     privileged: true
+    restart: always
+    network_mode: host
+    stop_grace_period: 90s  # 優化停止速度
     environment:
       - TZ=Asia/Shanghai
-    #ports:
-    #  - 8080:8080
-    #   jnlp
-    #  - 50000:50000
+      # 加入 G1GC 與 PreTouch 優化啟動效能
+      - JAVA_OPTS=-Xms4g -Xmx8g -XX:+UseG1GC -XX:+AlwaysPreTouch -XX:MaxGCPauseMillis=200 -Djava.awt.headless=true
     volumes:
-      - /docker/jenkins_home:/var/jenkins_home
+      - /jenkins_home:/var/jenkins_home
+      # 建議將插件緩存放在獨立目錄（若有 SSD 更好）
+      - /jenkins_home/jenkins_cache:/var/jenkins_cache
+      - /data/yml/jenkins/ca-certs:/usr/local/share/ca-certificates:ro
       - /var/run/docker.sock:/var/run/docker.sock
-        # docker程序
       - /usr/bin/docker:/usr/bin/docker
       - /usr/libexec/docker/cli-plugins:/usr/libexec/docker/cli-plugins
-    network_mode: host
-    restart: always
+      - /jenkins_home/docker-config:/root/.docker
